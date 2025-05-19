@@ -1,0 +1,12 @@
+C:/Users/sato/Downloads/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/Act_samples/Wireless_EM_Switch/Wireless_EM_Switch.cpp: In function 'void setup()':
+C:/Users/sato/Downloads/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/Act_samples/Wireless_EM_Switch/Wireless_EM_Switch.cpp:22:5: error: 'lcd' has not been declared
+make: *** [objs_RED/Wireless_EM_Switch.o] Error 1
+make: *** Waiting for unfinished jobs....
+C:/Users/sato/Downloads/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/Act_samples/Wireless_EM_Switch/lcd.cpp: In static member function 'static void lcd::command(char)':
+C:/Users/sato/Downloads/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/Act_samples/Wireless_EM_Switch/lcd.cpp:13:27: error: invalid conversion from 'char*' to 'const value_type* {aka const unsigned char*}' [-fpermissive]
+In file included from C:/Users/sato/Downloads/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/TWENET/current/src/mwx/_tweltite.hpp:60:0,
+                 from C:/Users/sato/Downloads/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/TWENET/current/src/mwx/twelite.hpp:6,
+                 from C:/Users/sato/Downloads/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/TWENET/current/src/mwx/TWELITE:3,
+                 from C:/Users/sato/Downloads/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/Act_samples/Wireless_EM_Switch/lcd.cpp:1:
+C:/Users/sato/Downloads/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/TWENET/current/src/mwx/mwx_periph_wire.hpp:427:13: error:   initializing argument 1 of 'mwx::L1::periph_twowire::size_type mwx::L1::periph_twowire::write(const value_type*, mwx::L1::periph_twowire::size_type)' [-fpermissive]
+make: *** [objs_RED/lcd.o] Error 1
