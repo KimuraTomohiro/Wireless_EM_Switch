@@ -1,5 +1,5 @@
 #include <TWELITE>
-#include "Interrupt.hpp"
+#include "lcd.hpp"
 
 lcd lcd_control = lcd();
 
@@ -9,12 +9,14 @@ const uint8_t EM_SW = 18;
 const uint8_t RESET_SW = 19;
 
 
-TIMER_INTERRUPT the_timer_interrupt();
-
 extern char lcd_data_buf1[10];
 extern char lcd_data_buf2[10];
 
 void setup() {
+    Timer0.setup();
+    Timer0.begin(1,true,false);
+    Timer0.change_hz(0,50);
+    
     Wire.begin(WIRE_CONF::WIRE_400KHZ,false);
     lcd_control.setup();
 
@@ -29,11 +31,8 @@ void setup() {
 
     Serial << "--- Wireless Emergency Switch ---" << crlf;
 
-    Timer0.begin(1);
-    Timer0.change_hz(0,10);
+
 }
-
-
 
 
 /*** loop procedure (called every event) */
