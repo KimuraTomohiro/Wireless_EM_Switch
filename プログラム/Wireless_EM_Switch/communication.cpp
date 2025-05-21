@@ -32,13 +32,24 @@ ADC2の出力を16ビットで格納
 
 */
 
+const char* Serial_text[] = {
+    "緊急停止",
+    "疎通確認",
+    "出力再開"
+};
+
+
+
+
+
+
 void vTransmit(uint32_t addr, uint8_t data) {
 
 	if (auto&& pkt = the_twelite.network.use<NWK_SIMPLE>().prepare_tx_packet()) {
 		// set tx packet behavior
 		pkt << tx_addr(addr)  // 0..0xFF (LID 0:parent, FE:child w/ no id, FF:LID broad cast), 0x8XXXXXXX (long address)
-			<< tx_retry(0xA) // set retry (0x3 send four times in total)
-			<< tx_packet_delay(10,100,5); // send packet w/ delay (send first packet with randomized delay from 100 to 200ms, repeat every 20ms)
+			<< tx_retry(0x3) // set retry (0x3 send four times in total)
+			<< tx_packet_delay(0,10,5); // send packet w/ delay (send first packet with randomized delay from 100 to 200ms, repeat every 20ms)
 		// prepare packet payload
 		pack_bytes(pkt.get_payload() // set payload data objects.
 			, data
@@ -46,10 +57,13 @@ void vTransmit(uint32_t addr, uint8_t data) {
             , uint16_t(0xFFFF)
             , uint32_t(millis())
 		);
-	Serial << format("Status %x sended to master",data) << crlf;
+	Serial << format("制御用送信データ: %x %s",data,Serial_text[data]) << crlf;
 		// do transmit 
 		pkt.transmit();
+	}else{
+		Serial << format("送信失敗") << crlf;
 	}
+
 }
 
 

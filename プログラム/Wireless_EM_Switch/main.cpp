@@ -71,6 +71,9 @@ void setup() {
 
     Timer3.setup();
     Timer3.begin(1,true,false); //疎通確認用タイマー3を1Hz、割り込みあり、PWM出力なしでスタート
+
+    Timer4.setup(); //緊急停止解除信号のタイムアウト測定用タイマ
+
     
     Wire.begin(WIRE_CONF::WIRE_400KHZ,false);
     lcd_control.setup();
@@ -99,24 +102,39 @@ void setup() {
     change_mode(1);
 }
 
+
+uint8_t timer4_count = 0;
 /*** loop procedure (called every event) */
 void loop() {
 
-    // if(first_loop == true && digitalRead(EM_SW) == PIN_STATE::HIGH){
+    if(Timer4.available()){ 
+        //モード0のみ時間で遷移するモードだが、関数内でループを回すとメインループに戻らずイベントが処理されない。
+        //そのためここに処理を記述する。
+        timer4_count ++;
 
-    //         change_mode(0);
-    //         first_loop = false;
-    //         change_mode(1);
+        if(timer4_count > 5){
+            if(communication_established_check_flg == true){
+                sprintf(lcd_data_buf1,"Complete");
+            }else{
+                sprintf(lcd_data_buf1,"Timeout");
+            }
+            release_signal_send_flg = false;
 
-    // }else{
-    //     change_mode(1);
-    // }
+        while(digitalRead(EM_SW) == PIN_STATE::HIGH){
+            delay(100); //緊急停止からの復帰など、ボタンが押された状態の時に放されるまで待つ
+        }
+            delay(2000);
+            Timer1.change_hz(2);
+            change_mode(next_mode);
+            timer4_count = 0;
+            Timer4.end();
+
+        }
+    }
 
     //モード1とモード3の場合疎通が取れていないので一方的な送信のみになり、LCDの表示内容は変化しない。
     //しかしモード2とモード4の場合受信した情報から電圧情報を取得し表示に反映させる必要があるので、ここでその作業を行う。
     if(current_mode == 2 || current_mode == 4){   
-
-
 
     }
 

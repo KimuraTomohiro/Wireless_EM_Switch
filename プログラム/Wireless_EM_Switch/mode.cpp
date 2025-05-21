@@ -6,44 +6,53 @@
 
 extern lcd lcd_control;
 char current_mode;
-
+char next_mode;
+bool release_signal_send_flg = false;
 
 void change_mode(char mode_num){
+    char release_signal_send_count = 0;
+
+
 
     switch(mode_num){
+    case 0:
 
-    case 0: //電源投入時に緊急停止ボタンが押されていた場合、復帰指示とみなして信号を送る
-        
-        lcd_control.clean();
+        LED_mode = 4;
+        next_mode = current_mode;
         current_mode = 0;
-        LED_mode = 0;
-
-        sprintf(lcd_data_buf1,"EM_Status Released");
-
-        for(char i=0;i<5;i++){
-            vTransmit(0x0, 0x02);
-        }
-
-
-        delay(2000);
-        while(digitalRead(EM_SW) == PIN_STATE::HIGH);
-        delay(200);
+        Timer1.change_hz(10);    //赤の高速点滅
+        sprintf(lcd_data_buf1,"Releasing...");
+        release_signal_send_flg = true;
+        Timer4.begin(1,true,false);
 
         break;
 
     case 1:
 
-        lcd_control.clean();
-        current_mode = 1;
         LED_mode = 1;
+        lcd_control.clean();
+
+        while(digitalRead(EM_SW) == PIN_STATE::HIGH){
+            delay(100); //緊急停止からの復帰など、ボタンが押された状態の時に放されるまで待つ
+        }
+        delay(500);
+        attachIntDio(EM_SW,PIN_INT_MODE::RISING);
+        current_mode = 1;
+
         sprintf(lcd_data_buf1,"Detecting MASTER");
         break;
 
     case 2:
-
-        lcd_control.clean();
-        current_mode = 2;
         LED_mode = 2;
+        lcd_control.clean();
+        while(digitalRead(EM_SW) == PIN_STATE::HIGH){
+            delay(100); //緊急停止からの復帰など、ボタンが押された状態の時に放されるまで待つ
+        }
+        delay(500);
+
+        attachIntDio(EM_SW,PIN_INT_MODE::RISING);
+        current_mode = 2;
+
         break;
 
     case 3:
@@ -51,15 +60,19 @@ void change_mode(char mode_num){
         lcd_control.clean();
         current_mode = 3;
         LED_mode = 3;
-        sprintf(lcd_data_buf2,"EM");
+        sprintf(lcd_data_buf1,"Detecting MASTER");
+        lcd_control.setCursor(1,0);
+        lcd_control.print("EM");
         break;
+
 
     case 4:
 
         lcd_control.clean();
         current_mode = 4;
         LED_mode = 4;
-        sprintf(lcd_data_buf2,"EM");
+        lcd_control.setCursor(1,0);
+        lcd_control.print("EM");
         break;
 
 

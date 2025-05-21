@@ -1,0 +1,2 @@
+/Users/tomohiro/Documents/MWSTAGE/MWSDK/Act_samples/Wireless_EM_Switch/mode.cpp: In function 'void change_mode(char)':
+/Users/tomohiro/Documents/MWSTAGE/MWSDK/Act_samples/Wireless_EM_Switch/mode.cpp:13:10: warning: unused variable 'release_signal_send_count' [-Wunused-variable]

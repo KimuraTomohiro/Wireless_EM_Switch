@@ -94,6 +94,15 @@ void LCD_Timer_Control() {
             scroll_pos1 = 0;
         }
     } else {
+
+    // 文字列が変わったときにスクロール位置をリセット
+        if (strcmp(lcd_data_buf1, prev_lcd_data_buf1) != 0) {
+            scroll_pos1 = 0;
+            strcpy(prev_lcd_data_buf1, lcd_data_buf1);
+            // 表示バッファも初期化（あえて次のループで再描画されるように）
+            prev_disp_buf1[0] = '\0';
+        }
+
         // スクロール用バッファ構築
         static char scroll_buf1[32];
         for (size_t i = 0; i < len1; ++i) scroll_buf1[i] = lcd_data_buf1[i];
@@ -130,6 +139,12 @@ void LCD_Timer_Control() {
             scroll_pos2 = 0;
         }
     } else {
+        // 文字列が変わったときにスクロール位置をリセット
+        if (strcmp(lcd_data_buf2, prev_lcd_data_buf2) != 0) {
+            scroll_pos2 = 0;
+            strcpy(prev_lcd_data_buf2, lcd_data_buf2);
+        }
+
         static char scroll_buf2[32];
         for (size_t i = 0; i < len2; ++i) scroll_buf2[i] = lcd_data_buf2[i];
         for (size_t i = 0; i < GAP; ++i) scroll_buf2[len2 + i] = ' ';
@@ -151,46 +166,3 @@ void LCD_Timer_Control() {
         if (scroll_pos2 > len2 + GAP - LCD_WIDTH) scroll_pos2 = 0;
     }
 }
-
-
-
-   
-    // if(strlen(lcd_data_buf1)<=8){   //8文字以下のとき
-    //     if(strcmp(lcd_data_buf1, prev_lcd_data_buf1) != 0){
-    //         lcd_control.setCursor(0, 0);
-    //         lcd_control.print(blank);
-    //         lcd_control.setCursor(0, 0);
-    //         lcd_control.print(lcd_data_buf1);
-    //         strcpy(prev_lcd_data_buf1, lcd_data_buf1);
-    //     }
-    // }else{  //8文字以上のとき
-
-
-
-    // }
-
-
-
-    // if(strcmp(lcd_data_buf1, prev_lcd_data_buf1) != 0 && strlen(lcd_data_buf1)<=8){ //一行目の文字列が変わっていて、かつ8文字以内の場合一括変更
-
-    // }
-
-    // if(strcmp(lcd_data_buf2, prev_lcd_data_buf2) != 0){
-    //     lcd_control.setCursor(1, 0);
-    //     lcd_control.print(blank);
-    //     lcd_control.setCursor(1, 0);
-    //     lcd_control.print(lcd_data_buf2);
-    //     strcpy(prev_lcd_data_buf2, lcd_data_buf2);
-    // }
-
-    // if(strcmp(lcd_data_buf1, prev_lcd_data_buf1) != 0 || strcmp(lcd_data_buf2, prev_lcd_data_buf2) != 0){
-    //     lcd_control.command(0x01);
-    //     delay(1);
-    //     lcd_control.setCursor(0, 0);
-    //     lcd_control.print(lcd_data_buf1);
-    //     strcpy(prev_lcd_data_buf1, lcd_data_buf1);
-    //     lcd_control.setCursor(1, 0);
-    //     lcd_control.print(lcd_data_buf2);
-    //     strcpy(prev_lcd_data_buf2, lcd_data_buf2);
-    // }
-
