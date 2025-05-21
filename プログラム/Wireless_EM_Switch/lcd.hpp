@@ -1,5 +1,5 @@
-extern char lcd_data_buf1[10];
-extern char lcd_data_buf2[10];
+extern char lcd_data_buf1[32];
+extern char lcd_data_buf2[32];
 
 
 class lcd {
@@ -10,6 +10,7 @@ class lcd {
         void setup();
         void print(const char* str);
         void setCursor(uint8_t row, uint8_t col);
+        void clean();
     };
 
     

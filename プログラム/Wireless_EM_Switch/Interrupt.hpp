@@ -1,16 +1,16 @@
-class TIMER_INTERRUPT: MWX_APPDEFS_CRTP(TIMER_INTERRUPT)
+class INTERRUPT: MWX_APPDEFS_CRTP(INTERRUPT)
 {
 public:
     static const uint8_t TYPE_ID = 0x01;
 
     // load common definition for handlers
-    #define __MWX_APP_CLASS_NAME TIMER_INTERRUPT
+    #define __MWX_APP_CLASS_NAME INTERRUPT
     #include "_mwx_cbs_hpphead.hpp"
     #undef __MWX_APP_CLASS_NAME
 
 public:
     // constructor
-    TIMER_INTERRUPT() {}
+    INTERRUPT() {}
 
     void _setup() {}
     void _begin() {}
@@ -32,4 +32,4 @@ public:
     void transmit_complete(mwx::packet_ev_tx& evTx) {}
 };
 
-extern bool communication_established;
+extern bool communication_established_check_flg;

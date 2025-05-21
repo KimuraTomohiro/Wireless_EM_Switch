@@ -1,11 +1,11 @@
 #include <TWELITE>
 #include <NWK_SIMPLE>
 #include "communication.hpp"
-#include "Timer_Interrupt.hpp"
+#include "Interrupt.hpp"
 
 const uint32_t APP_ID = 0x20297C9;  
 const uint8_t CHANNEL = 12;
-bool communication_established;
+bool communication_established_check_flg;
 
 /*
 送受信データの詳細
@@ -56,12 +56,7 @@ void vTransmit(uint32_t addr, uint8_t data) {
 void on_rx_packet(packet_rx& rx, bool_t &handled) {
 	// rx >> Serial; // debugging (display longer packet information)
 
-    communication_established = true;
-
-    extern uint8_t rx_status;
-    extern uint16_t rx_volt1;
-    extern uint16_t rx_volt2;
-    extern uint32_t rx_timestamp;
+    communication_established_check_flg = true;
 
 	expand_bytes(rx.get_payload().begin(), rx.get_payload().end()
 				, rx_status       // 1byte of data

@@ -5,16 +5,17 @@
 #include "LED.hpp"
 #include "mode.hpp"
 #include "communication.hpp"
-#include "Timer_Interrupt.hpp"
+#include "Interrupt.hpp"
 
-//宣言部
-extern const uint8_t LED_R = 11;    //ほかファイルから参照できるようにする
-extern const uint8_t LED_G = 13;    //ほかファイルから参照できるようにする
+
+const uint8_t LED_R = 11;    //ほかファイルから参照できるようにする
+const uint8_t LED_G = 13;    //ほかファイルから参照できるようにする
 const uint8_t EM_SW = 18;
 const uint8_t RESET_SW = 19;
 
 
 lcd lcd_control = lcd();    //LCD制御用のインスタンス
+
 
 uint8_t rx_status = 0;
 uint16_t rx_volt1 = 0;
@@ -53,16 +54,19 @@ void setup() {
     pinMode(LED_G, OUTPUT);
     pinMode(EM_SW,INPUT_PULLDOWN);
 
-    the_twelite.app.use<TIMER_INTERRUPT>(); //タイマー割り込みでLCDの更新を行うためのアプリケーションビヘイビアを登録
+    the_twelite.app.use<INTERRUPT>(); //割り込みのアプリケーションビヘイビアを登録
 
     Timer0.setup();
-    Timer0.begin(10,true,false); //LCDの表示更新用のタイマー0を5Hz、割り込みあり、PWM出力なしでスタート
+    Timer0.begin(3,true,false); //LCDの表示更新用のタイマー0を3Hz、割り込みあり、PWM出力なしでスタート
 
     Timer1.setup();
     Timer1.begin(2,true,false); //LEDの点滅制御用タイマー1を2Hz、割り込みあり、PWM出力なしでスタート
 
     Timer2.setup();
-    Timer2.begin(2,true,false); //通信用・疎通確認用タイマー2を2Hz、割り込みあり、PWM出力なしでスタート
+    Timer2.begin(3,true,false); //通信用タイマー2を2Hz、割り込みあり、PWM出力なしでスタート
+
+    Timer3.setup();
+    Timer3.begin(1,true,false); //疎通確認用タイマー3を1Hz、割り込みあり、PWM出力なしでスタート
     
     Wire.begin(WIRE_CONF::WIRE_400KHZ,false);
     lcd_control.setup();
@@ -95,6 +99,14 @@ void setup() {
 
 /*** loop procedure (called every event) */
 void loop() {
+
+    //モード1とモード3の場合疎通が取れていないので一方的な送信のみになり、LCDの表示内容は変化しない。
+    //しかしモード2とモード4の場合受信した情報から電圧情報を取得し表示に反映させる必要があるので、ここでその作業を行う。
+    if(current_mode == 2 || current_mode == 4){   
+
+
+
+    }
 
 
 

@@ -14,23 +14,19 @@ void Timer_LED_Control(){
 
     switch(LED_mode){
         case 0:
-            digitalWrite(LED_R, HIGH);//消灯
-            digitalWrite(LED_G, HIGH);
+                //消灯
             break;
         
         case 1:
             digitalWrite(LED_R, LOW);//赤を点灯
-            digitalWrite(LED_G, HIGH);
             break;
 
         case 2:
-            digitalWrite(LED_R, HIGH);
             digitalWrite(LED_G, LOW);//緑を点灯
             break;
 
         case 3:
         case 4:
-            digitalWrite(LED_G, HIGH);
             
             //赤を点滅
             if(LED_R_ON){

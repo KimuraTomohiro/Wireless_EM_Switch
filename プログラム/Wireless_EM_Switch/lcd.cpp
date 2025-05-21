@@ -51,27 +51,146 @@ void lcd::setCursor(uint8_t row, uint8_t col) { //AQM0802Aのカーソル移動
     lcd::command(0x80 | (col + row_offsets[row]));
 }
 
+void lcd::clean(){
+    lcd::command(0x01);
+    delay(2);
+}
+
 
 
 
 extern lcd lcd_control;
 
-char lcd_data_buf1[10] = "";
-char lcd_data_buf2[10] = ""; 
+char lcd_data_buf1[32] = "";
+char lcd_data_buf2[32] = ""; 
 
-char prev_lcd_data_buf1[10] = "";
-char prev_lcd_data_buf2[10] = ""; 
+char prev_lcd_data_buf1[32] = "";
+char prev_lcd_data_buf2[32] = ""; 
 
-void LCD_Timer_Control(){   //タイマで規定時間ごとにLCDの表示をバッファ内の文字列に更新する。バッファ内の文字列に変更がなければなにもしない。
-    if(strcmp(lcd_data_buf1, prev_lcd_data_buf1) != 0 || strcmp(lcd_data_buf2, prev_lcd_data_buf2) != 0){
-        lcd_control.command(0x01);
-        delay(1);
-        lcd_control.setCursor(0, 0);
-        lcd_control.print(lcd_data_buf1);
-        strcpy(prev_lcd_data_buf1, lcd_data_buf1);
-        lcd_control.setCursor(1, 0);
-        lcd_control.print(lcd_data_buf2);
-        strcpy(prev_lcd_data_buf2, lcd_data_buf2);
+
+char blank[9] = "        ";
+
+void LCD_Timer_Control() {
+    static uint8_t scroll_pos1 = 0;
+    static uint8_t scroll_pos2 = 0;
+    static const uint8_t LCD_WIDTH = 8;
+    static const uint8_t GAP = 7;
+
+    size_t len1 = strlen(lcd_data_buf1);
+    size_t len2 = strlen(lcd_data_buf2);
+
+    static char prev_disp_buf1[LCD_WIDTH + 1] = "";
+    static char prev_disp_buf2[LCD_WIDTH + 1] = "";
+
+    // ======= 1行目 =======
+    if (len1 <= LCD_WIDTH) {
+        // スクロール不要
+        if (strcmp(lcd_data_buf1, prev_lcd_data_buf1) != 0) {
+            lcd_control.setCursor(0, 0);
+            lcd_control.print("        ");
+            lcd_control.setCursor(0, 0);
+            lcd_control.print(lcd_data_buf1);
+            strcpy(prev_lcd_data_buf1, lcd_data_buf1);
+            scroll_pos1 = 0;
+        }
+    } else {
+        // スクロール用バッファ構築
+        static char scroll_buf1[32];
+        for (size_t i = 0; i < len1; ++i) scroll_buf1[i] = lcd_data_buf1[i];
+        for (size_t i = 0; i < GAP; ++i) scroll_buf1[len1 + i] = ' ';
+        scroll_buf1[len1 + GAP] = '\0';
+
+        // 8文字抜き出し
+        char disp_buf1[LCD_WIDTH + 1];
+        for (size_t i = 0; i < LCD_WIDTH; ++i) {
+            disp_buf1[i] = scroll_buf1[scroll_pos1 + i];
+        }
+        disp_buf1[LCD_WIDTH] = '\0';
+
+        // 表示更新
+        if (strcmp(disp_buf1, prev_disp_buf1) != 0) {
+            lcd_control.setCursor(0, 0);
+            lcd_control.print(disp_buf1);
+            strcpy(prev_disp_buf1, disp_buf1);
+        }
+
+        // スクロール位置更新
+        scroll_pos1++;
+        if (scroll_pos1 > len1 + GAP - LCD_WIDTH) scroll_pos1 = 0;
+    }
+
+    // ======= 2行目 =======
+    if (len2 <= LCD_WIDTH) {
+        if (strcmp(lcd_data_buf2, prev_lcd_data_buf2) != 0) {
+            lcd_control.setCursor(1, 0);
+            lcd_control.print("        ");
+            lcd_control.setCursor(1, 0);
+            lcd_control.print(lcd_data_buf2);
+            strcpy(prev_lcd_data_buf2, lcd_data_buf2);
+            scroll_pos2 = 0;
+        }
+    } else {
+        static char scroll_buf2[32];
+        for (size_t i = 0; i < len2; ++i) scroll_buf2[i] = lcd_data_buf2[i];
+        for (size_t i = 0; i < GAP; ++i) scroll_buf2[len2 + i] = ' ';
+        scroll_buf2[len2 + GAP] = '\0';
+
+        char disp_buf2[LCD_WIDTH + 1];
+        for (size_t i = 0; i < LCD_WIDTH; ++i) {
+            disp_buf2[i] = scroll_buf2[scroll_pos2 + i];
+        }
+        disp_buf2[LCD_WIDTH] = '\0';
+
+        if (strcmp(disp_buf2, prev_disp_buf2) != 0) {
+            lcd_control.setCursor(1, 0);
+            lcd_control.print(disp_buf2);
+            strcpy(prev_disp_buf2, disp_buf2);
+        }
+
+        scroll_pos2++;
+        if (scroll_pos2 > len2 + GAP - LCD_WIDTH) scroll_pos2 = 0;
     }
 }
+
+
+
+   
+    // if(strlen(lcd_data_buf1)<=8){   //8文字以下のとき
+    //     if(strcmp(lcd_data_buf1, prev_lcd_data_buf1) != 0){
+    //         lcd_control.setCursor(0, 0);
+    //         lcd_control.print(blank);
+    //         lcd_control.setCursor(0, 0);
+    //         lcd_control.print(lcd_data_buf1);
+    //         strcpy(prev_lcd_data_buf1, lcd_data_buf1);
+    //     }
+    // }else{  //8文字以上のとき
+
+
+
+    // }
+
+
+
+    // if(strcmp(lcd_data_buf1, prev_lcd_data_buf1) != 0 && strlen(lcd_data_buf1)<=8){ //一行目の文字列が変わっていて、かつ8文字以内の場合一括変更
+
+    // }
+
+    // if(strcmp(lcd_data_buf2, prev_lcd_data_buf2) != 0){
+    //     lcd_control.setCursor(1, 0);
+    //     lcd_control.print(blank);
+    //     lcd_control.setCursor(1, 0);
+    //     lcd_control.print(lcd_data_buf2);
+    //     strcpy(prev_lcd_data_buf2, lcd_data_buf2);
+    // }
+
+    // if(strcmp(lcd_data_buf1, prev_lcd_data_buf1) != 0 || strcmp(lcd_data_buf2, prev_lcd_data_buf2) != 0){
+    //     lcd_control.command(0x01);
+    //     delay(1);
+    //     lcd_control.setCursor(0, 0);
+    //     lcd_control.print(lcd_data_buf1);
+    //     strcpy(prev_lcd_data_buf1, lcd_data_buf1);
+    //     lcd_control.setCursor(1, 0);
+    //     lcd_control.print(lcd_data_buf2);
+    //     strcpy(prev_lcd_data_buf2, lcd_data_buf2);
+    // }
 
