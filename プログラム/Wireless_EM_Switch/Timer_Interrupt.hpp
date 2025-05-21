@@ -31,3 +31,5 @@ public:
     void receive(mwx::packet_rx& rx) {}
     void transmit_complete(mwx::packet_ev_tx& evTx) {}
 };
+
+extern bool communication_established;

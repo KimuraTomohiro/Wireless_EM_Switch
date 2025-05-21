@@ -1,8 +1,6 @@
 extern char lcd_data_buf1[10];
 extern char lcd_data_buf2[10];
 
-extern char prev_lcd_data_buf1[10];
-extern char prev_lcd_data_buf2[10];
 
 class lcd {
     public:

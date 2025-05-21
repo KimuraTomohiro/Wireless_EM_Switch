@@ -1,6 +1,9 @@
 #include <TWELITE>
 #include "Timer_Interrupt.hpp" // ビヘイビア定義ファイル
 #include "lcd.hpp"
+#include "LED.hpp"
+#include "communication.hpp"
+#include "mode.hpp"
 
 /*****************************************************************/
 // MUST DEFINE CLASS NAME HERE
@@ -14,6 +17,28 @@ MWX_TIMER_INT(0, uint32_t arg, uint8_t& handled){
 
 MWX_TIMER_EVENT(0, uint32_t arg){
     LCD_Timer_Control();
+}
+
+MWX_TIMER_INT(1, uint32_t arg, uint8_t& handled){
+    Timer_LED_Control();
+    handled = true;
+}
+
+MWX_TIMER_INT(2, uint32_t arg, uint8_t& handled){
+    //通信の疎通確認を行う。このブロックがタイマ2の0.5秒毎に呼ばれ、その間に通信があればcommunication_establishedがtrueになるので疎通確認が取れる。
+    //その間に通信がない場合、通信が途絶したとみなしてモード1に戻る。
+    if(communication_established == false){ 
+        change_mode(1);
+    }
+    communication_established = false;
+
+    handled = false;
+}
+
+
+MWX_TIMER_EVENT(2, uint32_t arg){
+    vTransmit(0x0, 0x01);
+
 }
 
 /*****************************************************************/

@@ -1,0 +1,1 @@
+void change_mode(char mode_num);
