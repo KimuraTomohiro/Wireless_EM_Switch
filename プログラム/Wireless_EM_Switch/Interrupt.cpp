@@ -5,11 +5,33 @@
 #include "communication.hpp"
 #include "mode.hpp"
 
+//ビヘイビアに関する参考はここ
+//https://mwx.twelite.info/api-reference/behavior
+
 /*****************************************************************/
 // MUST DEFINE CLASS NAME HERE
 #define __MWX_APP_CLASS_NAME INTERRUPT
 #include "_mwx_cbs_cpphead.hpp" // 冒頭の定義
 /*****************************************************************/
+
+MWX_DIO_INT(PIN_DIGITAL::DIO18,uint32_t arg, uint8_t& handled){ //停止ボタンが押されたときに割り込み動作を行う。
+
+
+    handled = false;
+
+}
+
+MWX_DIO_EVENT(PIN_DIGITAL::DIO18, uint32_t arg){
+
+    if(current_mode == 1){
+        change_mode(3);
+    }else if(current_mode == 2){
+        change_mode(4);
+    }
+
+}
+
+
 
 MWX_TIMER_INT(0, uint32_t arg, uint8_t& handled){
     handled = false;
@@ -30,8 +52,20 @@ MWX_TIMER_INT(2, uint32_t arg, uint8_t& handled){
 
 
 MWX_TIMER_EVENT(2, uint32_t arg){   //定期通信を3Hzで行う
-    vTransmit(0x0, 0x01);
 
+    switch(current_mode){
+        
+        case 1:
+        case 2:
+            vTransmit(0x0, 0x01);
+        break;
+
+        case 3:
+        case 4:
+            vTransmit(0x0, 0x00);
+        break;
+
+    }
 }
 
 MWX_TIMER_INT(3, uint32_t arg, uint8_t& handled){
@@ -44,7 +78,7 @@ MWX_TIMER_INT(3, uint32_t arg, uint8_t& handled){
             change_mode(3);
         }
         
-    }else{  //疎通確認が取れた場合、モード1の場合モード2に、モード3の場合モード42変更する。
+    }else{  //疎通確認が取れた場合、モード1の場合モード2に、モード3の場合モード4に変更する。
         if(current_mode == 1){
             change_mode(2);
         }else if(current_mode == 3){

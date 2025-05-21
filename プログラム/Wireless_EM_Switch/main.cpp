@@ -22,10 +22,12 @@ uint16_t rx_volt1 = 0;
 uint16_t rx_volt2 = 0;
 uint32_t rx_timestamp = 0;
 
+bool first_loop = true;
+
 
 /*
 この変数でモードの切替を行う。
-モード0: セットアップ中
+モード0: 緊急復帰動作
 
 モード1: マスター探索中
     リモコン側から信号を発信して、基板側が返答する形で検索を行う。基板側の返答が取れたらモード2に移行する。
@@ -49,12 +51,14 @@ uint32_t rx_timestamp = 0;
 */
 
 void setup() {
-
-    pinMode(LED_R, OUTPUT);    //LEDを制御しているのがPch MOSFETなので、ロジックと出力が逆になる
-    pinMode(LED_G, OUTPUT);
-    pinMode(EM_SW,INPUT_PULLDOWN);
-
     the_twelite.app.use<INTERRUPT>(); //割り込みのアプリケーションビヘイビアを登録
+
+
+    pinMode(LED_R, OUTPUT_INIT_HIGH);    //LEDを制御しているのがPch MOSFETなので、ロジックと出力が逆になる
+    pinMode(LED_G, OUTPUT_INIT_HIGH);
+    pinMode(EM_SW,INPUT);
+    attachIntDio(EM_SW,PIN_INT_MODE::RISING);
+
 
     Timer0.setup();
     Timer0.begin(3,true,false); //LCDの表示更新用のタイマー0を3Hz、割り込みあり、PWM出力なしでスタート
@@ -84,7 +88,6 @@ void setup() {
 
 	the_twelite.begin(); // start twelite!
 
-    change_mode(0);
 
     delay(500);
 
@@ -94,11 +97,20 @@ void setup() {
     Serial <<"https://github.com/KimuraTomohiro/Wireless_EM_Switch"<< crlf;
 
     change_mode(1);
-
 }
 
 /*** loop procedure (called every event) */
 void loop() {
+
+    // if(first_loop == true && digitalRead(EM_SW) == PIN_STATE::HIGH){
+
+    //         change_mode(0);
+    //         first_loop = false;
+    //         change_mode(1);
+
+    // }else{
+    //     change_mode(1);
+    // }
 
     //モード1とモード3の場合疎通が取れていないので一方的な送信のみになり、LCDの表示内容は変化しない。
     //しかしモード2とモード4の場合受信した情報から電圧情報を取得し表示に反映させる必要があるので、ここでその作業を行う。
@@ -107,19 +119,6 @@ void loop() {
 
 
     }
-
-
-
-
-
-    // sprintf(lcd_data_buf1,"ABCDEFGH");
-
-	// if(digitalRead(EM_SW) == PIN_STATE::HIGH){
-    //     sprintf(lcd_data_buf2,"ON");
-
-	// }else{
-    //     sprintf(lcd_data_buf2,"OFF");
-	// }
 
 }
 

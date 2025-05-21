@@ -301,13 +301,13 @@ c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.
 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(floatunsidf.o)
                               c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-dtoa.o) (__floatunsidf)
 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memcmp.o)
-                              C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans2.ltrans.o (memcmp)
+                              C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans0.ltrans.o (memcmp)
 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_fixunsdfsi.o)
-                              C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans5.ltrans.o (__fixunsdfsi)
+                              C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans1.ltrans.o (__fixunsdfsi)
 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_udivdi3.o)
-                              C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans5.ltrans.o (__udivdi3)
+                              C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans1.ltrans.o (__udivdi3)
 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_umoddi3.o)
-                              C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans5.ltrans.o (__umoddi3)
+                              C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans1.ltrans.o (__umoddi3)
 
 Allocating common symbols
 Common symbol       size              file
@@ -340,26 +340,27 @@ g_bLegacyHwBugEmulation
 Discarded input sections
 
  .text          0x0000000000000000        0x0 objs_RED/_mwx_version.o (symbol from plugin)
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans0.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans1.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans2.ltrans.o
- .text.exit     0x0000000000000000        0x3 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans3.ltrans.o
- .text.startup  0x0000000000000000      0x101 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans3.ltrans.o
- .ctors         0x0000000000000000        0x4 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans3.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans4.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans5.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans6.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans7.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans8.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans12.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans13.ltrans.o
- .bss           0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans13.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans17.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans18.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans19.ltrans.o
- .bss           0x0000000000000000        0x4 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans19.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans20.ltrans.o
- .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans21.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans0.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans1.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans2.ltrans.o
+ .text.exit     0x0000000000000000        0x3 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans4.ltrans.o
+ .text.startup  0x0000000000000000      0x101 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans4.ltrans.o
+ .ctors         0x0000000000000000        0x4 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans4.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans5.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans6.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans8.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans9.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans10.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans12.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans13.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans14.ltrans.o
+ .bss           0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans14.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans15.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans17.ltrans.o
+ .rodata        0x0000000000000000        0x1 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans17.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans18.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans19.ltrans.o
+ .data          0x0000000000000000        0x0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans20.ltrans.o
  .data          0x0000000000000000        0x0 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memcmp.o)
  .bss           0x0000000000000000        0x0 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memcmp.o)
  .data          0x0000000000000000        0x0 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_fixunsdfsi.o)
@@ -632,28 +633,28 @@ ram              0x000000000400004c 0x0000000000007fb4
 Linker script and memory map
 
 LOAD objs_RED/_mwx_version.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans0.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans1.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans2.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans3.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans4.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans5.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans6.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans7.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans8.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans9.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans10.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans11.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans12.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans13.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans14.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans15.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans16.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans17.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans18.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans19.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans20.ltrans.o
-LOAD C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans21.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans0.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans1.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans2.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans3.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans4.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans5.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans6.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans7.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans8.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans9.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans10.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans11.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans12.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans13.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans14.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans15.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans16.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans17.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans18.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans19.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans20.ltrans.o
+LOAD C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans21.ltrans.o
 LOAD c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a
 LOAD c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a
 LOAD c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a
@@ -727,14 +728,14 @@ LOAD c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r3
                 0x000000000008001c        0x2 SHORT 0x0
                 0x000000000008001e        0x2 SHORT 0x0 ABSOLUTE (_SwConfig)
                 0x0000000000080020                _enc_start = ABSOLUTE (.)
-                0x0000000000080020        0x4 LONG 0x14d84 ABSOLUTE (_image_len)
-                0x0000000000080024        0x4 LONG 0x944bc ABSOLUTE (_flash_data_start)
+                0x0000000000080020        0x4 LONG 0x14e4c ABSOLUTE (_image_len)
+                0x0000000000080024        0x4 LONG 0x9457c ABSOLUTE (_flash_data_start)
                 0x0000000000080028        0x2 SHORT 0x13 ((ABSOLUTE (_ram_data_start) / 0x4) & 0xffff)
-                0x000000000008002a        0x2 SHORT 0x232 ((ABSOLUTE (_ram_data_len) / 0x4) & 0xffff)
-                0x000000000008002c        0x2 SHORT 0x245 ((ABSOLUTE (_bss_start) / 0x4) & 0xffff)
-                0x000000000008002e        0x2 SHORT 0x5c4 ((ABSOLUTE (_bss_len) / 0x4) & 0xffff)
-                0x0000000000080030        0x4 LONG 0x85aec ABSOLUTE (AppWarmStart)
-                0x0000000000080034        0x4 LONG 0x8649c ABSOLUTE (AppColdStart)
+                0x000000000008002a        0x2 SHORT 0x234 ((ABSOLUTE (_ram_data_len) / 0x4) & 0xffff)
+                0x000000000008002c        0x2 SHORT 0x247 ((ABSOLUTE (_bss_start) / 0x4) & 0xffff)
+                0x000000000008002e        0x2 SHORT 0x5c5 ((ABSOLUTE (_bss_len) / 0x4) & 0xffff)
+                0x0000000000080030        0x4 LONG 0x87758 ABSOLUTE (AppWarmStart)
+                0x0000000000080034        0x4 LONG 0x88108 ABSOLUTE (AppColdStart)
                 0x0000000000000000                _enc_offset = (_enc_start & 0xf)
                 0x0000000000000044                PROVIDE (vException_BusError, restore_state)
                 0x0000000000000044                PROVIDE (vException_UnalignedAccess, restore_state)
@@ -758,596 +759,594 @@ LOAD c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r3
                 0x0000000000080050                _exception_external_interrupt
                 0x00000000000800f8                _default_vsr_dummy
 
-.rodata         0x0000000000080100      0x931
+.rodata         0x0000000000080100      0x939
  *(.rodata*)
- .rodata        0x0000000000080100       0xd4 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans1.ltrans.o
-                0x0000000000080100                s_aprScanHandleEvt.16890
-                0x0000000000080130                apvActionCalls
-                0x00000000000801b8                aprLPBMacVectorRamTable
-                0x00000000000801cc                psTamMacContext
-                0x00000000000801d0                psTAMcontext
- .rodata        0x00000000000801d4       0x9a C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans2.ltrans.o
+ .rodata        0x0000000000080100      0x1cb C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans0.ltrans.o
  .rodata.str1.1
-                0x000000000008026e       0x88 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans3.ltrans.o
- .rodata        0x00000000000802f6        0x5 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans3.ltrans.o
- .rodata.str1.1
-                0x00000000000802fb       0x1f C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans4.ltrans.o
- .rodata        0x000000000008031a       0x17 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans4.ltrans.o
- .rodata.str1.1
-                0x0000000000080331        0xe C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans5.ltrans.o
+                0x00000000000802cb        0xe C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans1.ltrans.o
                                          0x12 (size before relaxing)
- *fill*         0x000000000008033f        0x1 00
- .rodata        0x0000000000080340       0xc0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans5.ltrans.o
- .rodata        0x0000000000080400        0x6 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans7.ltrans.o
-                0x0000000000080400                aeXcvPhyEvtToScanEvt.5424.16893
+ *fill*         0x00000000000802d9        0x7 00
+ .rodata        0x00000000000802e0       0xc0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans1.ltrans.o
+ .rodata        0x00000000000803a0       0xd4 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans2.ltrans.o
+                0x00000000000803a0                s_aprScanHandleEvt.16993
+                0x00000000000803d0                apvActionCalls
+                0x0000000000080458                aprLPBMacVectorRamTable
+                0x000000000008046c                psTamMacContext
+                0x0000000000080470                psTAMcontext
+ .rodata        0x0000000000080474       0x20 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans3.ltrans.o
+                0x0000000000080474                prHeap_AllocFunc
  .rodata.str1.1
-                0x0000000000080406       0x11 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans8.ltrans.o
- *fill*         0x0000000000080417        0x1 00
- .rodata        0x0000000000080418       0x7c C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans8.ltrans.o
-                0x000000000008044c                u32MacLow_TOCOS
-                0x0000000000080450                u32MacHigh_TOCOS
+                0x0000000000080494       0x88 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans4.ltrans.o
+ .rodata        0x000000000008051c        0x5 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans4.ltrans.o
  .rodata.str1.1
-                0x0000000000080494       0x22 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans9.ltrans.o
- *fill*         0x00000000000804b6        0x2 00
- .rodata        0x00000000000804b8       0x38 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans9.ltrans.o
-                0x00000000000804b8                asStateFuncTbl.28644
+                0x0000000000080521        0xe C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans5.ltrans.o
+ .rodata        0x000000000008052f       0x17 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans6.ltrans.o
  .rodata.str1.1
-                0x00000000000804f0       0x1f C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans10.ltrans.o
- .rodata        0x000000000008050f       0x15 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans11.ltrans.o
- .rodata        0x0000000000080524        0x4 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans12.ltrans.o
- .rodata        0x0000000000080528        0xa C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans13.ltrans.o
- *fill*         0x0000000000080532        0x2 00
- .rodata        0x0000000000080534       0x18 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans14.ltrans.o
+                0x0000000000080546       0x1f C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans7.ltrans.o
+                                         0x2d (size before relaxing)
+ .rodata        0x0000000000080565        0x6 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans9.ltrans.o
+                0x0000000000080565                aeXcvPhyEvtToScanEvt.5424.16996
  .rodata.str1.1
-                0x0000000000000000       0x11 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans15.ltrans.o
- .rodata        0x000000000008054c        0x4 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans16.ltrans.o
- .rodata        0x0000000000080550        0xc C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans17.ltrans.o
-                0x0000000000080558                psTamXcvContext
+                0x000000000008056b       0x11 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans10.ltrans.o
+ .rodata        0x000000000008057c       0x7c C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans10.ltrans.o
+                0x00000000000805b0                u32MacLow_TOCOS
+                0x00000000000805b4                u32MacHigh_TOCOS
+ .rodata        0x00000000000805f8       0x24 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans11.ltrans.o
+                0x0000000000080600                psTamXcvContext
  .rodata.str1.1
-                0x000000000008055c      0x12e C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans17.ltrans.o
+                0x000000000008061c      0x197 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans12.ltrans.o
+                                        0x199 (size before relaxing)
+ .rodata        0x00000000000807b3        0x4 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans13.ltrans.o
+ .rodata        0x00000000000807b7        0xa C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans14.ltrans.o
  .rodata.str1.1
-                0x000000000008068a       0x77 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans18.ltrans.o
-                                         0x79 (size before relaxing)
- .rodata        0x0000000000080701      0x131 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans19.ltrans.o
- *fill*         0x0000000000080832        0x2 00
- .rodata        0x0000000000080834       0x30 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans20.ltrans.o
-                0x0000000000080834                au32UartAddrOffset
-                0x000000000008083c                au32TimerBaseAddress
-                0x0000000000080850                CSWTCH.35.27479.27479
+                0x00000000000807c1       0x11 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans16.ltrans.o
  .rodata.str1.1
-                0x0000000000080864       0x32 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-svfprintf.o)
+                0x00000000000807d2       0x22 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans17.ltrans.o
+                                         0x33 (size before relaxing)
+ .rodata        0x00000000000807f4       0x30 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans19.ltrans.o
+                0x00000000000807f4                au32UartAddrOffset
+                0x00000000000807fc                au32TimerBaseAddress
+                0x0000000000080810                CSWTCH.35.27582.27582
+ .rodata.str1.1
+                0x0000000000080824       0x11 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans21.ltrans.o
+                                         0x22 (size before relaxing)
+ *fill*         0x0000000000080835        0x3 00
+ .rodata        0x0000000000080838       0x38 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans21.ltrans.o
+                0x0000000000080838                asStateFuncTbl.28747
+ .rodata.str1.1
+                0x0000000000080870       0x32 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-svfprintf.o)
                                          0x34 (size before relaxing)
- .rodata        0x0000000000080896       0x20 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-svfprintf.o)
+ .rodata        0x00000000000808a2       0x20 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-svfprintf.o)
  .rodata.str1.1
-                0x00000000000808b6        0xd c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-dtoa.o)
+                0x00000000000808c2        0xd c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-dtoa.o)
                                           0xf (size before relaxing)
  .rodata.str1.1
-                0x00000000000808c3        0x2 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-impure.o)
+                0x00000000000808cf        0x2 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-impure.o)
  .rodata.str1.1
-                0x00000000000808c5        0x6 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-locale.o)
+                0x00000000000808d1        0x6 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-locale.o)
                                           0xb (size before relaxing)
- *fill*         0x00000000000808cb        0x5 00
- .rodata        0x00000000000808d0      0x128 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mprec.o)
-                0x00000000000808d0                __mprec_tinytens
-                0x00000000000808f8                __mprec_bigtens
-                0x0000000000080920                __mprec_tens
+ *fill*         0x00000000000808d7        0x1 00
+ .rodata        0x00000000000808d8      0x128 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mprec.o)
+                0x00000000000808d8                __mprec_tinytens
+                0x0000000000080900                __mprec_bigtens
+                0x0000000000080928                __mprec_tens
  .rodata.str1.1
                 0x0000000000000000       0x22 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-svfiprintf.o)
- .rodata        0x00000000000809f8       0x20 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-svfiprintf.o)
- .rodata        0x0000000000080a18       0x19 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-glue.o)
+ .rodata        0x0000000000080a00       0x20 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-svfiprintf.o)
+ .rodata        0x0000000000080a20       0x19 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-glue.o)
 
-.text           0x0000000000080a34    0x13a87
+.text           0x0000000000080a3c    0x13b3f
  *(.text*)
- .text          0x0000000000080a34      0xd26 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans0.ltrans.o
-                0x0000000000080a34                bAHI_ReadMACID
-                0x0000000000080a7a                _ZL17delayMicrosecondsm.2868.constprop.328
-                0x0000000000080afd                vMLMEbeaconNotify
-                0x0000000000080c5c                vMCPSframeReceived
-                0x0000000000080d20                _ZN3mwx2L114periph_twowireC1Eh.local.76
-                0x0000000000080d5d                ToCoNet_vInit
-                0x00000000000810a0                vExpireHead.26095
-                0x00000000000810d0                _vsnprintf.constprop.363
-                0x00000000000816e3                fctprintf
-                0x0000000000081705                _ZN3mwx2L111_printobj_1IhE9_do_printEPvPFvcS3_ES3_.local.219
-                0x0000000000081719                MWX_DebugMsg
+ .text          0x0000000000080a3c      0xfcc C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans0.ltrans.o
+                0x0000000000080a3c                mac_vLPBAdjustBeaconOffset
+                0x0000000000080a99                mac_u32LPBGetBeaconTimeout
+                0x0000000000080aa2                eWEnDTmrExpiry.16634
+                0x0000000000080aad                eWEnDEdDone.16631
+                0x0000000000080b08                eGenlDontCare.16628
+                0x0000000000080b0d                eGenlIllegal.16253
+                0x0000000000080b14                u32GetTimer0
+                0x0000000000080b1b                vSetTimer0
+                0x0000000000080b2a                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE18_cbTweNet_vHwEventEPvmm.local.221
+                0x0000000000080b2d                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE17_cbTweNet_u8HwIntEPvmm.local.220
+                0x0000000000080b32                _out_fct.7961
+                0x0000000000080b44                _out_null.7967
+                0x0000000000080b47                vOutputStream.7832
+                0x0000000000080b53                _ZN3mwx2L110serial_jen7vOutputEcPv.local.218
+                0x0000000000080b7a                vHandlerPatch.6945
+                0x0000000000080bb1                _ZN3mwx2L114processev_crtpI9INTERRUPTE14vProcessEvCoreEP8_tsEvent7teEventm.local.180
+                0x0000000000080bb4                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE9_on_eventEPvmRm.local.181
+                0x0000000000080bb7                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE18_cbTweNet_vTxEventEPvRNS0_12packet_ev_txE.local.182
+                0x0000000000080bba                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE18_cbTweNet_vRxEventEPvRNS0_9packet_rxE.local.183
+                0x0000000000080bbd                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE19_cbTweNet_vNwkEventEPvRNS0_13packet_ev_nwkE.local.184
+                0x0000000000080bc0                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE15_cbTweNet_vMainEPv.local.185
+                0x0000000000080bc3                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE18_cbTweNet_vTxEventEPvRNS0_12packet_ev_txE.local.217
+                0x0000000000080bdd                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE19_cbTweNet_vNwkEventEPvRNS0_13packet_ev_nwkE.local.225
+                0x0000000000080be6                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE15_cbTweNet_vMainEPv.local.226
+                0x0000000000080be9                MAC_bLookUpKeyDescriptor.23745
+                0x0000000000080c63                u8TSCframeIncrease
+                0x0000000000080c9c                vCopyToDataFromMacAddr.23655
+                0x0000000000080ccf                psTAQsearchFifo
+                0x0000000000080d18                bTAQremoveFromFifo
+                0x0000000000080d55                vTAMinsertEvent
+                0x0000000000080dbb                vTAM_TxRetryTimeout
+                0x0000000000080dbf                vTACsetTxFrameDefaults
+                0x0000000000080de5                u8TACgetHeaderSize
+                0x0000000000080e22                bUpdateTime.21973
+                0x0000000000080e5d                u32TACpayloadToU32M
+                0x0000000000080e7e                vTACu32ToPayloadM
+                0x0000000000080e96                vTACbuildBeacon
+                0x000000000008109e                bTACframeInProgress
+                0x00000000000810c8                bTACassessBeaconForPayload
+                0x0000000000081119                bIsBbcSafeForTx
+                0x000000000008114e                vTATwriteAclMaterialToHardware
+                0x0000000000081173                vTATsetBLE
+                0x00000000000811aa                vTATgetFramePayload
+                0x00000000000811c7                eTATreadTXstatus
+                0x000000000008120d                vTAHsetPhyStateDirect.part.0.21114
+                0x0000000000081229                vDoGoOff.22935
+                0x0000000000081243                vMEMreturn
+                0x00000000000812b4                vTACinformOriginator
+                0x00000000000812d6                pvMEMget
+                0x0000000000081302                vTAMDEdetermineNullState
+                0x000000000008131c                vTAMCOupdatePendingList
+                0x00000000000813ee                vTAMCOsetCoordinator
+                0x0000000000081414                eScanHandleEvt.part.0.16664
+                0x000000000008143d                mac_eDcfmIndPost
+                0x000000000008145e                mac_psDcfmIndGetBuf
+                0x000000000008147f                vMLMErxEnableConfirm
+                0x00000000000814b1                vMLMEcommStatus
+                0x0000000000081514                vMLMEcommStatusFromFrame
+                0x0000000000081558                vTSCpostTransmitUpdate
+                0x0000000000081587                vMLMEsyncLoss
+                0x00000000000815ba                vPMICpostFailedAssocDcfm
+                0x00000000000815f2                vPMICassocReqTO_2.15081
+                0x0000000000081609                MAC_vPibSetPanId
+                0x0000000000081624                vHandleTofRequest.13187
+                0x0000000000081627                vAppApiDefSetPrbsSeed
+                0x000000000008164b                mwx::L1::duplciate_checker::_node_ele_init(mwx::L1::duplciate_checker::_node_ele*)
+                0x000000000008166a                _ZN3mwx2L113serial_parserINS0_10alloc_heapIhEEEC1Ev.local.52
+                0x000000000008168c                _ZN3mwx2L16twenetC1Ev.local.58
+                0x0000000000081723                _ZN3mwx2L110serial_jenC1Eh.local.107
+                0x0000000000081753                _ZN3mwx2L115periph_analogueC1Ev.local.125
+                0x000000000008177e                _ZN3mwx2L112appdefs_virt8on_eventEmRm.local.134
+                0x0000000000081796                _ZN3mwx2L112appdefs_virt18cbToCoNet_vHwEventEmm.local.136
+                0x00000000000817ae                _ZN3mwx2L112appdefs_virt18cbToCoNet_vTxEventERNS0_12packet_ev_txE.local.137
+                0x00000000000817c6                _ZN3mwx2L112appdefs_virt19cbToCoNet_vNwkEventERNS0_13packet_ev_nwkE.local.139
+                0x00000000000817de                u8CCITT8
+                0x0000000000081804                bAES_CCM_KeyReg
+                0x0000000000081843                bFifoPush.5646
+                0x000000000008187c                vAppQApiPostMlme.5632
+                0x000000000008189b                vAppQApiPostMcps.5639
+                0x00000000000818b6                pvFifoPull.5643
+                0x00000000000818dd                psAppQApiGetMlmeBuffer.5629
+                0x00000000000818e5                psAppQApiGetMcpsBuffer.5636
+                0x00000000000818ed                PRSEV_vSetState
+                0x00000000000818fd                PRSEV_vProcessEv_core.4516
+                0x000000000008199f                PRSEV_vProcessEvPost
+                0x00000000000819d1                _PRSEV_vProcessEvSingle
+                0x00000000000819de                ToCoNet_vMacStart
+                0x00000000000819eb                _ZN3mwx2L18_smplbufIhNS0_12alloc_attachIhEEE9push_backEOh.local.207
  .text.unlikely
-                0x000000000008175a        0xf C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans0.ltrans.o
-                0x000000000008175a                u32AppQApiInitInt_PATCH
- *fill*         0x0000000000081769        0x3 00
- .text          0x000000000008176c      0xba8 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans1.ltrans.o
-                0x000000000008176c                eWBRTTxDone.16547
-                0x000000000008178a                vTAMCOframeTXgoingIdle
-                0x00000000000817a3                vTAMCOframeTXcap
-                0x00000000000817c9                eWCoRRxDone.16538
-                0x0000000000081873                eWBcnRxDone.16550
-                0x0000000000081e5e                vTAMCOframeRXcap
-                0x0000000000081e70                vTAMCOframeRXgoingIdle
-                0x0000000000081e86                vTAMCOframeRXnobeacon
-                0x0000000000081e98                vTAMDEframeRX
-                0x0000000000081ec1                vTAMDEframeRXtrackingDR
-                0x0000000000081f05                vTAMDEframePreSyncReq
-                0x0000000000081f1e                vTAMCOframeTXbeacon
-                0x0000000000081fe5                vTAMDEframeRXsyncReq
-                0x0000000000082235                vTAMDEint1FiredTrackingCAPgts
-                0x00000000000822e6                eWONTTxDone.16544
- .text          0x0000000000082314      0xcda C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans2.ltrans.o
-                0x0000000000082314                vTTIBLETimerExpired
-                0x000000000008231f                vACI_CmdWaitBusy
-                0x000000000008232c                vEcbEncodeStripe.26699
-                0x0000000000082383                vTAIdisableInterrupt
-                0x000000000008239c                psRemove.part.0.26090
-                0x00000000000823cb                vMAC_MISCpollConfirm
-                0x00000000000823fd                MAC_u8AclFindInfo
-                0x0000000000082527                vTASretrieveSecurity
-                0x0000000000082549                MAC_bLookUpKeyDescriptor.23642
-                0x00000000000825c3                u8TSCframeIncrease
-                0x00000000000825fc                vCopyToDataFromMacAddr.23552
-                0x000000000008262f                bTSCgetOutgoingInfo
-                0x0000000000082738                psTAQsearchFifo
-                0x0000000000082781                bTAQremoveFromFifo
-                0x00000000000827be                vTAMinsertEvent
-                0x0000000000082824                vTTITimer2Expired
-                0x0000000000082828                vTTITimer1Expired
-                0x000000000008282c                vTAM_TxRetryTimeout
-                0x0000000000082830                vTACsetTxFrameDefaults
-                0x0000000000082856                u8TACgetHeaderSize
-                0x0000000000082893                bUpdateTime.21870
-                0x00000000000828ce                u32TACpayloadToU32M
-                0x00000000000828ef                vTACu32ToPayloadM
-                0x0000000000082907                vTACbuildBeacon
-                0x0000000000082b0f                bTACframeInProgress
-                0x0000000000082b39                bTACassessBeaconForPayload
-                0x0000000000082b8a                bIsBbcSafeForTx
-                0x0000000000082bbf                vTATwriteAclMaterialToHardware
-                0x0000000000082be4                vTATsetBLE
-                0x0000000000082c1b                vTATgetFramePayload
-                0x0000000000082c38                eTATreadTXstatus
-                0x0000000000082c7e                vTAHsetPhyStateDirect.part.0.21011
-                0x0000000000082c9a                vDoGoOff.22832
-                0x0000000000082cb4                vMLMErxEnableConfirm
-                0x0000000000082ce8                vMLMEcommStatus
-                0x0000000000082d4d                vMLMEcommStatusFromFrame
-                0x0000000000082d91                vTSCpostTransmitUpdate
-                0x0000000000082dc0                vMLMEsyncLoss
-                0x0000000000082df5                vMEMreturn
-                0x0000000000082e66                vTACinformOriginator
-                0x0000000000082e88                vTTITransactionTimerExpired
-                0x0000000000082eb0                pvMEMget
-                0x0000000000082edc                vTAMDEdetermineNullState
-                0x0000000000082ef6                vTAMCOupdatePendingList
-                0x0000000000082fc8                vTAMCOsetCoordinator
- .text          0x0000000000082fee      0x657 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans3.ltrans.o
-                0x0000000000082fee                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE18_cbTweNet_vRxEventEPvRNS0_9packet_rxE.local.222
-                0x000000000008353c                vAppApiDefMlmeRequest
-                0x0000000000083567                pvAppApiDefGetMacHandle
-                0x0000000000083570                _ZN3mwx2L112periph_timer5beginEtbb.local.171.constprop.304
- *fill*         0x0000000000083645        0x3 00
+                0x0000000000081a08       0x65 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans0.ltrans.o
+                0x0000000000081a08                _ZN3mwx2L112appdefs_virt18cbToCoNet_vRxEventERNS0_9packet_rxE.local.138
+                0x0000000000081a20                PRSEV_u8Register
+                0x0000000000081a5e                _PRSEV_vProcessEvSingleH
+ .text          0x0000000000081a6d     0x1126 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans1.ltrans.o
+                0x0000000000081c65                vHnd_E_STATE_IDLE.28707
+                0x0000000000081cc9                _ntoa_long_long.8009.constprop.366
+                0x0000000000081d9e                _ntoa_long.7997.constprop.371
+                0x0000000000081e6b                _etoa.8055.constprop.367
+                0x0000000000082216                _ftoa.8035.constprop.369
+                0x000000000008256f                vMMAC_SetChannelAndPower
+                0x0000000000082718                vPhySetChannel
+                0x0000000000082737                QUEUE__u8RemoveItem.part.1.7147
+                0x0000000000082772                QUEUE__vAddItem.constprop.359
+                0x00000000000827a4                _ZN3mwx2L110twenet_mac8transmitERNS0_9packet_txE.local.32.constprop.358
+                0x00000000000829a9                vRxChar.6970
+                0x00000000000829fa                _ToCoNet_bRfChChannel
+                0x0000000000082a8f                ToCoNet_ChMgr_bCh_Reconfig
+                0x0000000000082af7                ToCoNet_ChMgr_vCh_TxFin
+                0x0000000000082b23                vHnd_E_STATE_WAIT_TX.28715
+ *fill*         0x0000000000082b93        0x1 00
+ .text          0x0000000000082b94      0xba8 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans2.ltrans.o
+                0x0000000000082b94                eWBRTTxDone.16650
+                0x0000000000082bb2                vTAMCOframeTXgoingIdle
+                0x0000000000082bcb                vTAMCOframeTXcap
+                0x0000000000082bf0                eWCoRRxDone.16641
+                0x0000000000082c9a                eWBcnRxDone.16653
+                0x0000000000083286                vTAMCOframeRXcap
+                0x0000000000083298                vTAMCOframeRXgoingIdle
+                0x00000000000832ae                vTAMCOframeRXnobeacon
+                0x00000000000832c0                vTAMDEframeRX
+                0x00000000000832e9                vTAMDEframeRXtrackingDR
+                0x000000000008332c                vTAMDEframePreSyncReq
+                0x0000000000083345                vTAMCOframeTXbeacon
+                0x000000000008340c                vTAMDEframeRXsyncReq
+                0x000000000008365c                vTAMDEint1FiredTrackingCAPgts
+                0x000000000008370d                eWONTTxDone.16647
+ .text          0x000000000008373c      0xb1c C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans3.ltrans.o
+                0x0000000000083771                mac_vLPBStartTimer
+                0x0000000000083888                vACI_IntHandlerAes
+                0x00000000000838ad                vProcessEvCoreTx.28684
+                0x0000000000083932                pvHeap_DefAlloc.28592
+                0x000000000008399d                vMicroIntEnableOnly.constprop.360
+                0x00000000000839c9                vAHI_ProtocolPower.constprop.349
+                0x00000000000839d7                vMMAC_ConfigureRadio
+                0x0000000000083b82                bAHI_SetClockRate
+                0x0000000000083c8d                vAHI_SiMasterConfigure.constprop.316
+                0x0000000000083cc1                vAHI_TimerEnable.part.1.27449.constprop.308
+                0x0000000000083d2c                _ZN3mwx2L16twenet5beginEv.local.112.constprop.298
+                0x0000000000083d71                vAHI_DioWakeEnable.constprop.297
+                0x0000000000083d85                pinMode(unsigned char, mwx::L1::enum_wapper<PIN_MODE::eMWX_DIO_MODE, unsigned char>)
+                0x0000000000083efc                _ZN3mwx2L115periph_analogue10_adc_startEv.local.43.constprop.286
+                0x0000000000083fe5                mwx::L1::periph_analogue::ADC_handler(unsigned long, unsigned long)
+                0x000000000008402c                u8HwEventHandler.4726
+                0x00000000000840d4                bAES_CCMstar
+                0x00000000000841a0                operator new(unsigned long)
+                0x00000000000841c4                _ZN3mwx2L114periph_twowireC1Eh.local.76
+                0x0000000000084201                _ZN3mwx2L112appdefs_virt5setupEv.part.1.3693
+                0x0000000000084227                _ZN3mwx2L112periph_timer5setupEv.local.173
  .text.unlikely
-                0x0000000000083648      0x310 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans3.ltrans.o
-                0x0000000000083665                vProcessIncomingHwEvent.4792
- .text          0x0000000000083958      0x8e0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans4.ltrans.o
-                0x0000000000083958                UART_vHandleUartInterrupt.6969
-                0x0000000000083a28                _ZN3mwx2L114processev_crtpINS0_9NwkSimpleEE14vProcessEvCoreEP8_tsEvent7teEventm.local.224
-                0x0000000000083adb                vRxChar.6867
-                0x0000000000083b2c                vXCV_IntHandlerPhy
-                0x0000000000083bde                vScanHandleTimer.16147
-                0x0000000000083be4                vXCV_IntHandlerBbc
-                0x0000000000083c87                _ZN3mwx2L114periph_twowire14cmd_tx_no_stopEb.isra.3.2877.constprop.332
-                0x0000000000083c95                _ZN3mwx2L114periph_twowire5writeEPKhh.local.188.constprop.327
-                0x0000000000083ce6                _ZN3mwx2L114periph_twowire11cmd_tx_stopEb.isra.4.2880.constprop.331
-                0x0000000000083cf4                _ZN3mwx2L114periph_twowire12cmd_tx_startEv.isra.2.2875
-                0x0000000000083d02                _ZN3mwx2L110serial_jen13_set_baudrateEt.isra.2.8613
-                0x0000000000083db3                u8TAM_AES_WriteAuxilliarySecurityHeaderIntoBuffer
-                0x0000000000083e25                u32AHI_ReadIndexSectorBits.constprop.247
-                0x0000000000083e86                vTAIsetCapTime
-                0x0000000000083ea7                vTAIsetRxEnableTime
-                0x0000000000083ec8                vDoGoActive.22834
-                0x0000000000083eea                vTAMRXEint2Fired
-                0x0000000000083f20                _ZN3mwx2L115periph_analogue5setupEbhPFvvE.local.124.constprop.257
-                0x0000000000083fba                TWESYSUTL_vWaitPoll
-                0x000000000008405a                _ZL5delaym.2865
-                0x0000000000084085                vTAMRXEsetPhy
-                0x0000000000084148                vTAHsetPhyState
-                0x0000000000084178                vTAMCOint2Fired
-                0x0000000000084198                vSetPHYfromMacValue.19668
-                0x00000000000841ca                vTAMDEint1FiredWaitDR
-                0x00000000000841d7                vTACsetPHYfromMacValue
-                0x00000000000841f8                vTAMRXEsetReceiveForPibChange
- .text          0x0000000000084238     0x110f C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans5.ltrans.o
-                0x0000000000084430                _ntoa_long_long.7906.constprop.364
-                0x0000000000084505                _ntoa_long.7894.constprop.369
-                0x00000000000845d2                _etoa.7952.constprop.365
-                0x000000000008497d                _ftoa.7932.constprop.367
-                0x0000000000084cd6                vMicroIntEnableOnly.constprop.358
-                0x0000000000084d02                vMMAC_SetChannelAndPower
-                0x0000000000084eab                vPhySetChannel
-                0x0000000000084eca                QUEUE__u8RemoveItem.part.1.7044
-                0x0000000000084f05                QUEUE__vAddItem.constprop.357
-                0x0000000000084f37                _ZN3mwx2L110twenet_mac8transmitERNS0_9packet_txE.local.32.constprop.356
-                0x000000000008513c                _ToCoNet_bRfChChannel
-                0x00000000000851d1                ToCoNet_ChMgr_bCh_Reconfig
-                0x0000000000085239                ToCoNet_ChMgr_vCh_TxFin
-                0x0000000000085265                vHnd_E_STATE_WAIT_TX.28612
-                0x00000000000852d5                vHnd_E_STATE_IDLE.28604
-                0x0000000000085339                vAHI_ProtocolPower.constprop.347
- .text          0x0000000000085347      0x6cf C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans6.ltrans.o
-                0x0000000000085347                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE17_cbTweNet_u8HwIntEPvmm.local.178
-                0x0000000000085410                bAES_CCM_EncodeKey
-                0x0000000000085742                u8Write802_15_4HeaderIntoBuffer.24841
-                0x00000000000858a2                _ZN3mwx2L110serial_jen10_on_wakeupEv.part.27.8791
-                0x000000000008591c                _MWX_periph_init()
- *fill*         0x0000000000085a16        0x2 00
- .text          0x0000000000085a18      0xa84 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans7.ltrans.o
-                0x0000000000085a18                vPostDcfm.16534
-                0x0000000000085aec                AppWarmStart
-                0x0000000000085bbc                vSetNextChannel.16582
-                0x0000000000085c15                MAC_vHandleMlmeReqRsp
-                0x00000000000863c5                vTAMDEint1FiredTracking
-                0x0000000000086435                vTAMDEint1FiredSyncReq
- .text          0x000000000008649c      0x55c C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans8.ltrans.o
-                0x000000000008649c                AppColdStart
+                0x0000000000084258       0x45 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans3.ltrans.o
+                0x0000000000084258                vAHI_MemoryHold.27346
+ .text          0x000000000008429d      0x657 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans4.ltrans.o
+                0x000000000008429d                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE18_cbTweNet_vRxEventEPvRNS0_9packet_rxE.local.222
+                0x00000000000847eb                vAppApiDefMlmeRequest
+                0x0000000000084816                pvAppApiDefGetMacHandle
+                0x000000000008481f                _ZN3mwx2L112periph_timer5beginEtbb.local.171.constprop.305
+ *fill*         0x00000000000848f4        0x0 00
  .text.unlikely
-                0x00000000000869f8      0x43b C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans8.ltrans.o
-                0x00000000000869f8                ToCoNet_vStart
- .text          0x0000000000086e33      0xc78 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans9.ltrans.o
-                0x0000000000086e33                TSV_eStart
-                0x0000000000086f17                eTAStransmitRequest
-                0x00000000000872b2                TSV_eOpen
-                0x00000000000872ba                vAppApiDefRestoreMacSettings
-                0x00000000000873a1                vAppApiDefSaveMacSettings
-                0x00000000000873fe                mac_vLPBSleep
-                0x00000000000874bc                pvAppApiDefGetMacAddrLocation
-                0x00000000000874c5                eAppApiDefPlmeGet
-                0x0000000000087517                eAppApiDefPlmeSet
-                0x0000000000087588                vAppApiDefMcpsRequest
-                0x00000000000875b3                vHnd_E_STATE_PREPARE_TX.28599
- .text          0x0000000000087aab      0x782 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans10.ltrans.o
-                0x0000000000087aab                vHnd_E_STATE_RUNNING.28620
-                0x0000000000087cf5                SERIAL_vTxReady
-                0x0000000000087d8f                vAppQApiPostHwIntT.5522
-                0x0000000000087e62                TWETERM_iGetC.28986
-                0x0000000000087ec5                MWX_Panic
-                0x0000000000087f29                cbAppColdStart.part.32.9273
-                0x0000000000088113                _ZN3lcd5printEPKc.constprop.321
-                0x0000000000088178                _ZN3lcd7commandEh.constprop.324
-                0x00000000000881ca                _ZN3lcd9setCursorEhh.constprop.320
-                0x00000000000881f7                _ZN3lcd5cleanEv.constprop.323
-                0x0000000000088207                _Z11change_modec.part.0.4206
+                0x00000000000848f4      0x310 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans4.ltrans.o
+                0x0000000000084911                vProcessIncomingHwEvent.4895
+ .text          0x0000000000084c04      0xc5c C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans5.ltrans.o
+                0x0000000000084c04                bAHI_ReadMACID
+                0x0000000000084c4a                vMLMEbeaconNotify
+                0x0000000000084da8                vMCPSframeReceived
+                0x0000000000084e6b                ToCoNet_vInit
+                0x00000000000851ae                vExpireHead.26198
+                0x00000000000851de                _vsnprintf.constprop.365
+                0x00000000000857f1                fctprintf
+                0x0000000000085813                _ZN3mwx2L111_printobj_1IhE9_do_printEPvPFvcS3_ES3_.local.219
+                0x0000000000085827                TWE_fprintf.constprop.352
  .text.unlikely
-                0x000000000008822d      0x181 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans10.ltrans.o
-                0x00000000000882a6                bStartXtal32k.27150
- *fill*         0x00000000000883ae        0x2 00
- .text          0x00000000000883b0      0xa58 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans11.ltrans.o
-                0x00000000000883f9                vProcessEvCoreTx.28581
-                0x000000000008847e                vMMAC_ConfigureRadio
-                0x0000000000088629                bAHI_SetClockRate
-                0x0000000000088734                vAHI_SiMasterConfigure.constprop.315
-                0x0000000000088768                vAHI_TimerEnable.part.1.27346.constprop.307
-                0x00000000000887d3                vTimerStart
-                0x00000000000888ec                _ZN3mwx2L16twenet5beginEv.local.112.constprop.297
-                0x0000000000088931                pinMode(unsigned char, mwx::L1::enum_wapper<PIN_MODE::eMWX_DIO_MODE, unsigned char>)
-                0x0000000000088aa8                _ZN3mwx2L115periph_analogue10_adc_startEv.local.43.constprop.286
-                0x0000000000088b91                mwx::L1::periph_analogue::ADC_handler(unsigned long, unsigned long)
-                0x0000000000088bd8                u8HwEventHandler.4623
-                0x0000000000088c80                bAES_CCMstar
-                0x0000000000088d4c                bAES_CCM_DecodeKey
+                0x0000000000085860       0x88 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans5.ltrans.o
+                0x0000000000085860                Delay.27247.constprop.274
+                0x00000000000858d9                u32AppQApiInitInt_PATCH
+ .text          0x00000000000858e8      0x8d5 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans6.ltrans.o
+                0x00000000000858e8                UART_vHandleUartInterrupt.7072
+                0x000000000008596f                TWETERM_iGetC.29089
+                0x00000000000859d2                vXCV_IntHandlerPhy
+                0x0000000000085a84                vScanHandleTimer.16250
+                0x0000000000085a89                bAES_CCM_EncodeKey
+                0x0000000000085b36                vXCV_IntHandlerBbc
+                0x0000000000085bd9                _ZN3mwx2L110serial_jen13_set_baudrateEt.isra.2.8716
+                0x0000000000085c8a                u8TAM_AES_WriteAuxilliarySecurityHeaderIntoBuffer
+                0x0000000000085cfc                u32AHI_ReadIndexSectorBits.constprop.247
+                0x0000000000085d5d                vTAIsetCapTime
+                0x0000000000085d7e                vTAIsetRxEnableTime
+                0x0000000000085d9f                vDoGoActive.22937
+                0x0000000000085dc1                vTAMRXEint2Fired
+                0x0000000000085df7                _ZN3mwx2L115periph_analogue5setupEbhPFvvE.local.124.constprop.257
+                0x0000000000085e91                TWESYSUTL_vWaitPoll
+                0x0000000000085f31                _ZL5delaym.2884
+                0x0000000000085f5c                _ZL5delaym.4253
+                0x0000000000085f87                _ZL17delayMicrosecondsm.2887.constprop.330
+                0x000000000008600a                vTAMRXEsetPhy
+                0x00000000000860cd                vTAHsetPhyState
+                0x00000000000860fd                vTAMCOint2Fired
+                0x000000000008611d                vSetPHYfromMacValue.19771
+                0x000000000008614f                vTAMDEint1FiredWaitDR
+                0x000000000008615c                vTACsetPHYfromMacValue
+                0x000000000008617d                vTAMRXEsetReceiveForPibChange
  .text.unlikely
-                0x0000000000088e08       0x45 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans11.ltrans.o
-                0x0000000000088e08                vAHI_MemoryHold.27243
- .text          0x0000000000088e4d      0x9e5 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans12.ltrans.o
-                0x0000000000088e4d                vAHI_IntHandlerTickTimer
-                0x0000000000088e94                vTACintRXheader
-                0x000000000008968f                eGenRxHdrDone.16541
-                0x000000000008969f                vHnd_E_STATE_FINISH_TX_FAIL.28589
-                0x0000000000089755                vHnd_E_STATE_FINISH_TX_SUCCESS.28594
-                0x00000000000897e7                UART_vSetTxInterrupt
- .text          0x0000000000089832      0xae4 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans13.ltrans.o
-                0x0000000000089832                cbToCoNet_vTxEvent
-                0x0000000000089975                bTAM_AES_CCMstarPatch
-                0x0000000000089ab9                bTAM_AES_CCMstarPatch2006
-                0x0000000000089d98                bTATsendFrame
-                0x0000000000089deb                vTrySendFromDirectCAP.19125
-                0x0000000000089e06                vTrySendFromDirectNoBeacon.19129
-                0x0000000000089e31                vTAMCOint1Fired
-                0x0000000000089f4d                vTAMCOstartBeacon
-                0x0000000000089f88                vStartStoreValues.19193
-                0x000000000008a03f                bStartCallback.19222
-                0x000000000008a06e                vTAMCOint1FiredCAP
-                0x000000000008a0e1                vTAMCOreqTXnoBeacon
-                0x000000000008a0f3                vTAMCOreqTXinCAP
-                0x000000000008a119                vTrySendUnslotted.19670
-                0x000000000008a133                bSendDataRequest.19672
-                0x000000000008a245                bProcessBeaconRX.19675
- *fill*         0x000000000008a316        0x2 00
- .text          0x000000000008a318      0x96c C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans14.ltrans.o
-                0x000000000008a318                vPMICassocReqTO_1.14971
-                0x000000000008a3a0                vTAM_MCPSdataRequest
-                0x000000000008a3e3                bTACcheckPANconflict
-                0x000000000008a49c                vTAMDEstartSync
-                0x000000000008a51b                eTAMselect
-                0x000000000008a65c                MAC_pvCtor
-                0x000000000008aa85                vDeterminePowerState.19792
-                0x000000000008ab09                vTAMDEint1FiredTrackingBeacon
-                0x000000000008aba9                vTAMDEint2FiredTrackingDR
-                0x000000000008abce                vTAMDEframeTXtrackingDR
-                0x000000000008ac27                vTAMDEint2FiredPollActive
-                0x000000000008ac5b                vTAMDEreqTXnullTrackingCAP
-                0x000000000008ac74                vTAM_TxRetryTimer
- .text          0x000000000008ac84      0x83e C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans15.ltrans.o
-                0x000000000008ac84                ToCoNet_vMain
- .text          0x000000000008b4c2      0x9d2 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans16.ltrans.o
-                0x000000000008b4c2                mac_vLPBStartTimer
-                0x000000000008b7ed                vTimerCallback.27126
-                0x000000000008b863                pvHeap_Alloc
-                0x000000000008b865                operator new(unsigned long)
-                0x000000000008b888                _ZN3mwx2L112appdefs_virt5setupEv.part.1.3674
-                0x000000000008b8ad                _ZN3mwx2L112periph_timer5setupEv.local.173
-                0x000000000008b8db                u32AHI_Init
-                0x000000000008b99d                vMicroIntRestoreState
-                0x000000000008b9a9                vAHI_DoSetDataOut
-                0x000000000008b9bd                bAHI_DoEnableOutputs
-                0x000000000008b9e6                u8AHI_WakeTimerFiredStatus
-                0x000000000008b9fa                vAHI_WakeTimerStop.part.3.27811
-                0x000000000008ba1a                mac_vLPBStopTimer
-                0x000000000008ba24                vAHI_UartSetClocksPerBit.part.18.27607
-                0x000000000008ba4b                vAHI_UartSetRTSCTS.part.15.27592
-                0x000000000008ba72                vAHI_UartReset.part.4.27565
-                0x000000000008baaa                vAHI_UartSetControl.part.2.27549
-                0x000000000008bafb                vAHI_UartSetBaudDivisor.part.1.27545
-                0x000000000008bb3a                vAHI_WatchdogStop
-                0x000000000008bb51                _ZN3mwx2L120periph_pulse_counter10_on_wakeupEv.part.18.8647
-                0x000000000008bbc7                u32AHI_DioWakeStatus
-                0x000000000008bbd8                vAHI_DioWakeEdge
-                0x000000000008bbf8                vAHI_DioSetPullup
-                0x000000000008bc18                vAHI_DioSetOutput
-                0x000000000008bc2c                _ZL12digitalWritehN3mwx2L111enum_wapperIN9PIN_STATE16eMWX_DIO_HIGHLOWEhEE.isra.1.1641
-                0x000000000008bc68                vAHI_DioSetDirection
-                0x000000000008bc7c                vACI_OptimisedCcmStar
+                0x00000000000861bd      0x108 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans6.ltrans.o
+                0x00000000000861bd                bStartXtal32k.27253
+ .text          0x00000000000862c5      0x875 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans7.ltrans.o
+                0x00000000000862c5                vHnd_E_STATE_RUNNING.28723
+                0x000000000008650f                SERIAL_vTxReady
+                0x0000000000086570                vAppQApiPostHwIntT.5625
+                0x0000000000086643                MWX_Panic
+                0x00000000000866a7                MWX_DebugMsg
+                0x00000000000867a9                _ZN3lcd7commandEh.constprop.326
+                0x00000000000867fb                _ZN3lcd9setCursorEhh.constprop.321
+                0x0000000000086828                _ZN3lcd5cleanEv.constprop.325
+                0x0000000000086838                _ZN3lcd5printEPKc.constprop.322
+                0x000000000008689d                _ZN3mwx2L114processev_crtpINS0_9NwkSimpleEE14vProcessEvCoreEP8_tsEvent7teEventm.local.224
+                0x0000000000086950                cbAppColdStart.part.32.9376
+ .text          0x0000000000086b3a      0xb26 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans8.ltrans.o
+                0x0000000000086d29                vTimerCallback.27229
+                0x0000000000086d34                vTTIBLETimerExpired
+                0x0000000000086d3f                vTTITimer2Expired
+                0x0000000000086d44                vTTITimer1Expired
+                0x0000000000086d49                vTTITransactionTimerExpired
+                0x0000000000086d72                pvHeap_Alloc
+                0x0000000000086d75                u32AHI_Init
+                0x0000000000086e37                vMicroIntRestoreState
+                0x0000000000086e43                vAHI_DoSetDataOut
+                0x0000000000086e57                bAHI_DoEnableOutputs
+                0x0000000000086e80                u8AHI_WakeTimerFiredStatus
+                0x0000000000086e94                vAHI_WakeTimerStop.part.3.27914
+                0x0000000000086eb4                mac_vLPBStopTimer
+                0x0000000000086ebe                vAHI_UartSetClocksPerBit.part.18.27710
+                0x0000000000086ee5                vAHI_UartSetRTSCTS.part.15.27695
+                0x0000000000086f0c                vAHI_UartReset.part.4.27668
+                0x0000000000086f44                vAHI_UartSetControl.part.2.27652
+                0x0000000000086f95                vAHI_UartSetBaudDivisor.part.1.27648
+                0x0000000000086fd4                vAHI_WatchdogStop
+                0x0000000000086feb                _ZN3mwx2L120periph_pulse_counter10_on_wakeupEv.part.18.8750
+                0x0000000000087061                u32AHI_DioWakeStatus
+                0x0000000000087072                vAHI_DioWakeEdge
+                0x0000000000087092                vAHI_DioSetPullup
+                0x00000000000870b2                vAHI_DioSetOutput
+                0x00000000000870c6                _ZL12digitalWritehN3mwx2L111enum_wapperIN9PIN_STATE16eMWX_DIO_HIGHLOWEhEE.isra.1.1660
+                0x0000000000087102                vAHI_DioSetDirection
+                0x0000000000087116                vACI_CmdWaitBusy
+                0x000000000008717a                vACI_OptimisedCcmStar
+                0x0000000000087392                vTAIdisableInterrupt
+                0x00000000000873ab                psRemove.part.0.26193
+                0x00000000000873da                vMAC_MISCpollConfirm
+                0x000000000008740b                MAC_u8AclFindInfo
+                0x0000000000087535                bTSCgetOutgoingInfo
+                0x000000000008763e                vTASretrieveSecurity
  .text.unlikely
-                0x000000000008be94       0x24 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans16.ltrans.o
-                0x000000000008be94                vAHI_CpuDoze
-                0x000000000008bea7                vStartXtal32kExternalRc.27140
- .text          0x000000000008beb8      0x725 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans17.ltrans.o
-                0x000000000008beb8                u32AppApiDefInit
-                0x000000000008bf83                _ToCoNet_vMacInit
-                0x000000000008bfe9                _ToCoNet_vRfConfig
-                0x000000000008c184                mwx::L1::NwkSimple::on_create(unsigned long&)
-                0x000000000008c1d5                _ZN3mwx2L123twenet_instance_manager3useINS0_9NwkSimpleEEERT_Rm.local.153.constprop.338
-                0x000000000008c329                setup()
- .text          0x000000000008c5dd      0x5e5 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans18.ltrans.o
-                0x000000000008c5dd                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE9_on_eventEPvmRm.local.223
-                0x000000000008c6cd                vProcessEvCoreMac
-                0x000000000008c734                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE18_cbTweNet_vHwEventEPvmm.local.179
- .text          0x000000000008cbc2      0x665 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans19.ltrans.o
-                0x000000000008cbc2                mac_vLPBAdjustBeaconOffset
-                0x000000000008cc1f                mac_u32LPBGetBeaconTimeout
-                0x000000000008cc28                eWEnDTmrExpiry.16531
-                0x000000000008cc33                eWEnDEdDone.16528
-                0x000000000008cc8e                eGenlDontCare.16525
-                0x000000000008cc93                eGenlIllegal.16150
-                0x000000000008cc9a                u32GetTimer0
-                0x000000000008cca1                vSetTimer0
-                0x000000000008ccb0                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE18_cbTweNet_vHwEventEPvmm.local.221
-                0x000000000008ccb3                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE17_cbTweNet_u8HwIntEPvmm.local.220
-                0x000000000008ccb8                _out_fct.7858
-                0x000000000008ccca                _out_null.7864
-                0x000000000008cccd                vOutputStream.7729
-                0x000000000008ccd9                _ZN3mwx2L110serial_jen7vOutputEcPv.local.218
-                0x000000000008cd00                vHandlerPatch.6842
-                0x000000000008cd37                _ZN3mwx2L114processev_crtpI9INTERRUPTE14vProcessEvCoreEP8_tsEvent7teEventm.local.180
-                0x000000000008cd3a                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE9_on_eventEPvmRm.local.181
-                0x000000000008cd3d                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE18_cbTweNet_vTxEventEPvRNS0_12packet_ev_txE.local.182
-                0x000000000008cd40                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE18_cbTweNet_vRxEventEPvRNS0_9packet_rxE.local.183
-                0x000000000008cd43                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE19_cbTweNet_vNwkEventEPvRNS0_13packet_ev_nwkE.local.184
-                0x000000000008cd46                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE15_cbTweNet_vMainEPv.local.185
-                0x000000000008cd49                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE18_cbTweNet_vTxEventEPvRNS0_12packet_ev_txE.local.217
-                0x000000000008cd63                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE19_cbTweNet_vNwkEventEPvRNS0_13packet_ev_nwkE.local.225
-                0x000000000008cd6c                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE15_cbTweNet_vMainEPv.local.226
-                0x000000000008cd6f                eScanHandleEvt.part.0.16561
-                0x000000000008cd98                mac_eDcfmIndPost
-                0x000000000008cdb9                mac_psDcfmIndGetBuf
-                0x000000000008cdda                vPMICpostFailedAssocDcfm
-                0x000000000008ce12                vPMICassocReqTO_2.14978
-                0x000000000008ce29                MAC_vPibSetPanId
-                0x000000000008ce44                vHandleTofRequest.13084
-                0x000000000008ce47                vAppApiDefSetPrbsSeed
-                0x000000000008ce6b                mwx::L1::duplciate_checker::_node_ele_init(mwx::L1::duplciate_checker::_node_ele*)
-                0x000000000008ce89                _ZN3mwx2L113serial_parserINS0_10alloc_heapIhEEEC1Ev.local.52
-                0x000000000008ceab                _ZN3mwx2L16twenetC1Ev.local.58
-                0x000000000008cf42                _ZN3mwx2L110serial_jenC1Eh.local.107
-                0x000000000008cf72                _ZN3mwx2L115periph_analogueC1Ev.local.125
-                0x000000000008cf9d                _ZN3mwx2L112appdefs_virt8on_eventEmRm.local.134
-                0x000000000008cfb5                _ZN3mwx2L112appdefs_virt18cbToCoNet_vHwEventEmm.local.136
-                0x000000000008cfcd                _ZN3mwx2L112appdefs_virt18cbToCoNet_vTxEventERNS0_12packet_ev_txE.local.137
-                0x000000000008cfe5                _ZN3mwx2L112appdefs_virt19cbToCoNet_vNwkEventERNS0_13packet_ev_nwkE.local.139
-                0x000000000008cffd                u8CCITT8
-                0x000000000008d023                bAES_CCM_KeyReg
-                0x000000000008d062                bFifoPush.5543
-                0x000000000008d09b                vAppQApiPostMlme.5529
-                0x000000000008d0ba                vAppQApiPostMcps.5536
-                0x000000000008d0d5                pvFifoPull.5540
-                0x000000000008d0fc                psAppQApiGetMlmeBuffer.5526
-                0x000000000008d104                psAppQApiGetMcpsBuffer.5533
-                0x000000000008d10c                PRSEV_vSetState
-                0x000000000008d11c                PRSEV_vProcessEv_core.4413
-                0x000000000008d1be                PRSEV_vProcessEvPost
-                0x000000000008d1f0                _PRSEV_vProcessEvSingle
-                0x000000000008d1fd                ToCoNet_vMacStart
-                0x000000000008d20a                _ZN3mwx2L18_smplbufIhNS0_12alloc_attachIhEEE9push_backEOh.local.207
+                0x0000000000087660       0x24 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans8.ltrans.o
+                0x0000000000087660                vAHI_CpuDoze
+                0x0000000000087673                vStartXtal32kExternalRc.27243
+ .text          0x0000000000087684      0xa84 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans9.ltrans.o
+                0x0000000000087684                vPostDcfm.16637
+                0x0000000000087758                AppWarmStart
+                0x0000000000087828                vSetNextChannel.16685
+                0x0000000000087881                MAC_vHandleMlmeReqRsp
+                0x0000000000088031                vTAMDEint1FiredTracking
+                0x00000000000880a1                vTAMDEint1FiredSyncReq
+ .text          0x0000000000088108      0x55c C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans10.ltrans.o
+                0x0000000000088108                AppColdStart
  .text.unlikely
-                0x000000000008d227       0x65 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans19.ltrans.o
-                0x000000000008d227                _ZN3mwx2L112appdefs_virt18cbToCoNet_vRxEventERNS0_9packet_rxE.local.138
-                0x000000000008d23f                PRSEV_u8Register
-                0x000000000008d27d                _PRSEV_vProcessEvSingleH
- .text          0x000000000008d28c      0x600 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans20.ltrans.o
-                0x000000000008d28c                SERIAL_bTxChar
-                0x000000000008d33d                TWETERM_iPutS.28978
-                0x000000000008d362                TWETERM_iPutC.28982
-                0x000000000008d373                TWETERM_vFlush.28955
-                0x000000000008d3f1                vTimerConfig
-                0x000000000008d5bf                _ZN3mwx2L112periph_timer6_startEv.part.8.8629
-                0x000000000008d609                cbAppWarmStart.part.28.9052
-                0x000000000008d835                _ZN3mwx2L110serial_jen5writeEi.local.146
-                0x000000000008d844                _ZN3mwx2L16streamINS0_10serial_jenEElsERNS0_18MWX_Stream_EndLineE.isra.29.3920.constprop.312
-                0x000000000008d868                _ZN3mwx2L16streamINS0_10serial_jenEE6_printEPKc.local.160.constprop.302
- .text          0x000000000008d88c      0x780 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans21.ltrans.o
-                0x000000000008d88c                eGenTmrExpiry.16843
-                0x000000000008d8ce                eWEDTEdDone.16846
-                0x000000000008d8f2                TSV_eStop
-                0x000000000008d9b1                bPMICdisassocReqSent.14967
-                0x000000000008da6b                MAC_vHandleMcpsReqRsp
-                0x000000000008daf8                bMCPSframeTXcomplete.17578
-                0x000000000008db4d                bSendSyncLoss.21805
-                0x000000000008db65                bPollReqSent.25401
-                0x000000000008db7d                bTASsendCommStatusInd
-                0x000000000008db92                bAssocRespSent.14963
-                0x000000000008dba5                eTACprocessFrameTXcomplete
-                0x000000000008dd21                vTAMCOframeTXnobeacon
-                0x000000000008dd36                vTAMCOframeStarting
-                0x000000000008dd4f                vTAMDEframeTXDEnull
-                0x000000000008dd72                vTAMDEframeTXtrackingCAPgts
-                0x000000000008dd9f                bPMICassocReqSent.14959
-                0x000000000008de21                bPMICassocReqPollSent.14974
-                0x000000000008de75                eWChCChanChgd.16558
- .text          0x000000000008e00c       0x25 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memcmp.o)
-                0x000000000008e00c                memcmp
- .text          0x000000000008e031       0x39 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_fixunsdfsi.o)
-                0x000000000008e031                __fixunsdfsi
- .text          0x000000000008e06a      0x350 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_udivdi3.o)
-                0x000000000008e06a                __udivdi3
- .text          0x000000000008e3ba      0x312 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_umoddi3.o)
-                0x000000000008e3ba                __umoddi3
- .text          0x000000000008e6cc       0x27 C:/Users/sato/Documents/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/ChipLib/SW4063V1416/Components/Library\libHardwareApi_JN5169.a(AHI_Interrupt.o)
-                0x000000000008e6cc                vAHI_InterruptSetPriority
-                0x000000000008e6ea                vAHI_InterruptSetActivePriorityLevel
+                0x0000000000088664      0x43b C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans10.ltrans.o
+                0x0000000000088664                ToCoNet_vStart
+ *fill*         0x0000000000088a9f        0x1 00
+ .text          0x0000000000088aa0      0x9a4 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans11.ltrans.o
+                0x0000000000088aa0                vTAMDEint2FiredTrackingDR
+                0x0000000000088ac6                vTAMDEint2FiredPollActive
+                0x0000000000088afb                vTAMDEreqTXnullTrackingCAP
+                0x0000000000088b15                eTAMselect
+                0x0000000000088c54                MAC_pvCtor
+                0x000000000008907d                u32AppApiDefInit
+                0x0000000000089148                _ToCoNet_vMacInit
+                0x00000000000891ae                _ToCoNet_vRfConfig
+                0x0000000000089349                vTAMDEint1FiredTrackingBeacon
+                0x00000000000893e9                vTAMDEframeTXtrackingDR
+ .text          0x0000000000089444      0x712 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans12.ltrans.o
+                0x0000000000089444                mwx::L1::NwkSimple::on_create(unsigned long&)
+                0x00000000000895e8                _Z9vTransmitmh.constprop.338
+                0x0000000000089884                setup()
+ .text          0x0000000000089b56      0x9e7 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans13.ltrans.o
+                0x0000000000089b56                vAHI_IntHandlerTickTimer
+                0x0000000000089b9d                vTACintRXheader
+                0x000000000008a398                eGenRxHdrDone.16644
+                0x000000000008a3a8                vHnd_E_STATE_FINISH_TX_FAIL.28692
+                0x000000000008a45f                vHnd_E_STATE_FINISH_TX_SUCCESS.28697
+                0x000000000008a4f2                UART_vSetTxInterrupt
+ .text          0x000000000008a53d      0xae4 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans14.ltrans.o
+                0x000000000008a53d                cbToCoNet_vTxEvent
+                0x000000000008a680                bTAM_AES_CCMstarPatch
+                0x000000000008a7c4                bTAM_AES_CCMstarPatch2006
+                0x000000000008aaa3                bTATsendFrame
+                0x000000000008aaf6                vTrySendFromDirectCAP.19228
+                0x000000000008ab11                vTrySendFromDirectNoBeacon.19232
+                0x000000000008ab3c                vTAMCOint1Fired
+                0x000000000008ac58                vTAMCOstartBeacon
+                0x000000000008ac93                vStartStoreValues.19296
+                0x000000000008ad4a                bStartCallback.19325
+                0x000000000008ad79                vTAMCOint1FiredCAP
+                0x000000000008adec                vTAMCOreqTXnoBeacon
+                0x000000000008adfe                vTAMCOreqTXinCAP
+                0x000000000008ae24                vTrySendUnslotted.19773
+                0x000000000008ae3e                bSendDataRequest.19775
+                0x000000000008af50                bProcessBeaconRX.19778
+ .text          0x000000000008b021      0x72e C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans15.ltrans.o
+                0x000000000008b021                bAES_CCM_DecodeKey
+                0x000000000008b362                u8Write802_15_4HeaderIntoBuffer.24944
+                0x000000000008b4c2                _ZN3mwx2L110serial_jen10_on_wakeupEv.part.27.8894
+                0x000000000008b53c                _MWX_periph_init()
+                0x000000000008b636                vTimerStart
+ .text          0x000000000008b74f      0x83e C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans16.ltrans.o
+                0x000000000008b74f                ToCoNet_vMain
+ .text          0x000000000008bf8d      0x4b2 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans17.ltrans.o
+                0x000000000008bf8d                _ZN3mwx2L112appdefs_crtpINS0_9NwkSimpleEE9_on_eventEPvmRm.local.223
+                0x000000000008c07c                vProcessEvCoreMac
+                0x000000000008c0e4                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE18_cbTweNet_vHwEventEPvmm.local.179
+                0x000000000008c341                _ZN3mwx2L112appdefs_crtpI9INTERRUPTE17_cbTweNet_u8HwIntEPvmm.local.178
+ .text          0x000000000008c43f      0x9e6 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans18.ltrans.o
+                0x000000000008c43f                TSV_eStart
+                0x000000000008c523                vTAMDEstartSync
+                0x000000000008c5a1                vDeterminePowerState.19895
+                0x000000000008c624                vTAM_TxRetryTimer
+                0x000000000008c630                eTAStransmitRequest
+                0x000000000008c9cb                vPMICassocReqTO_1.15074
+                0x000000000008ca53                vTAM_MCPSdataRequest
+                0x000000000008ca96                bTACcheckPANconflict
+                0x000000000008cb4f                TSV_eOpen
+                0x000000000008cb57                vAppApiDefRestoreMacSettings
+                0x000000000008cc3e                vAppApiDefSaveMacSettings
+                0x000000000008cc9b                mac_vLPBSleep
+                0x000000000008cd59                pvAppApiDefGetMacAddrLocation
+                0x000000000008cd62                eAppApiDefPlmeGet
+                0x000000000008cdb4                eAppApiDefPlmeSet
+ *fill*         0x000000000008ce25        0x3 00
+ .text          0x000000000008ce28      0x600 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans19.ltrans.o
+                0x000000000008ce28                SERIAL_bTxChar
+                0x000000000008ced9                TWETERM_iPutS.29081
+                0x000000000008cefe                TWETERM_iPutC.29085
+                0x000000000008cf0f                TWETERM_vFlush.29058
+                0x000000000008cf8d                vTimerConfig
+                0x000000000008d15b                _ZN3mwx2L112periph_timer6_startEv.part.8.8732
+                0x000000000008d1a5                cbAppWarmStart.part.28.9155
+                0x000000000008d3d1                _ZN3mwx2L110serial_jen5writeEi.local.146
+                0x000000000008d3e0                _ZN3mwx2L16streamINS0_10serial_jenEElsERNS0_18MWX_Stream_EndLineE.isra.29.3939.constprop.313
+                0x000000000008d404                _ZN3mwx2L16streamINS0_10serial_jenEE6_printEPKc.local.160.constprop.303
+ .text          0x000000000008d428      0x780 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans20.ltrans.o
+                0x000000000008d428                eGenTmrExpiry.16946
+                0x000000000008d46a                eWEDTEdDone.16949
+                0x000000000008d48e                TSV_eStop
+                0x000000000008d54d                bPMICdisassocReqSent.15070
+                0x000000000008d607                MAC_vHandleMcpsReqRsp
+                0x000000000008d694                bMCPSframeTXcomplete.17681
+                0x000000000008d6e9                bSendSyncLoss.21908
+                0x000000000008d701                bPollReqSent.25504
+                0x000000000008d719                bTASsendCommStatusInd
+                0x000000000008d72e                bAssocRespSent.15066
+                0x000000000008d741                eTACprocessFrameTXcomplete
+                0x000000000008d8bd                vTAMCOframeTXnobeacon
+                0x000000000008d8d2                vTAMCOframeStarting
+                0x000000000008d8eb                vTAMDEframeTXDEnull
+                0x000000000008d90e                vTAMDEframeTXtrackingCAPgts
+                0x000000000008d93a                bPMICassocReqSent.15062
+                0x000000000008d9bc                bPMICassocReqPollSent.15077
+                0x000000000008da10                eWChCChanChgd.16661
+ .text          0x000000000008dba8      0x523 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans21.ltrans.o
+                0x000000000008dba8                vAppApiDefMcpsRequest
+                0x000000000008dbd3                vHnd_E_STATE_PREPARE_TX.28702
+ .text          0x000000000008e0cb       0x25 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memcmp.o)
+                0x000000000008e0cb                memcmp
+ .text          0x000000000008e0f0       0x39 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_fixunsdfsi.o)
+                0x000000000008e0f0                __fixunsdfsi
+ .text          0x000000000008e129      0x350 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_udivdi3.o)
+                0x000000000008e129                __udivdi3
+ .text          0x000000000008e479      0x312 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_umoddi3.o)
+                0x000000000008e479                __umoddi3
+ .text          0x000000000008e78b       0x27 C:/Users/sato/Documents/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/ChipLib/SW4063V1416/Components/Library\libHardwareApi_JN5169.a(AHI_Interrupt.o)
+                0x000000000008e78b                vAHI_InterruptSetPriority
+                0x000000000008e7a9                vAHI_InterruptSetActivePriorityLevel
  .text.vMicroSyscall
-                0x000000000008e6f3       0x17 C:/Users/sato/Documents/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/ChipLib/SW4063V1416/Components/Library\libMicroSpecific_JN516x.a(MicroSyscall_ba.o)
-                0x000000000008e6f3                vMicroSyscall
- .text          0x000000000008e70a       0x12 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memset.o)
-                0x000000000008e70a                memset
- .text          0x000000000008e71c       0x84 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-sprintf.o)
-                0x000000000008e71c                _sprintf_r
-                0x000000000008e75a                sprintf
- .text          0x000000000008e7a0       0x25 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-strcmp.o)
-                0x000000000008e7a0                strcmp
- .text          0x000000000008e7c5       0x15 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-strcpy.o)
-                0x000000000008e7c5                strcpy
- .text          0x000000000008e7da       0x12 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-strlen.o)
-                0x000000000008e7da                strlen
- .text          0x000000000008e7ec     0x10e4 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-svfprintf.o)
-                0x000000000008e7ec                _svfprintf_r
- .text          0x000000000008f8d0      0xd83 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-dtoa.o)
-                0x000000000008fa1b                _dtoa_r
- .text          0x0000000000090653       0x86 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-locale.o)
-                0x0000000000090653                _setlocale_r
-                0x0000000000090699                __locale_charset
-                0x00000000000906a2                __locale_mb_cur_max
-                0x00000000000906ab                __locale_msgcharset
-                0x00000000000906b4                __locale_cjk_lang
-                0x00000000000906b9                _localeconv_r
-                0x00000000000906c2                setlocale
-                0x00000000000906d0                localeconv
- .text          0x00000000000906d9      0x4ba c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mallocr.o)
-                0x00000000000906d9                _malloc_r
- .text          0x0000000000090b93       0x19 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memchr.o)
-                0x0000000000090b93                memchr
- .text          0x0000000000090bac       0x19 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memcpy.o)
- .text          0x0000000000090bc5        0x6 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mlock.o)
-                0x0000000000090bc5                __malloc_lock
-                0x0000000000090bc8                __malloc_unlock
- .text          0x0000000000090bcb      0x8bb c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mprec.o)
-                0x0000000000090bcb                _Balloc
-                0x0000000000090c23                _Bfree
-                0x0000000000090c3d                __multadd
-                0x0000000000090cca                __s2b
-                0x0000000000090d57                __hi0bits
-                0x0000000000090dac                __lo0bits
-                0x0000000000090e25                __i2b
-                0x0000000000090e3a                __multiply
-                0x0000000000090f7b                __pow5mult
-                0x0000000000090ffa                __lshift
-                0x00000000000910ae                __mcmp
-                0x00000000000910ed                __mdiff
-                0x00000000000911cf                __ulp
-                0x0000000000091213                __b2d
-                0x00000000000912b6                __d2b
-                0x0000000000091375                __ratio
-                0x00000000000913c5                _mprec_log10
-                0x00000000000913f9                __copybits
-                0x0000000000091432                __any_on
- .text          0x0000000000091486       0x23 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-sbrkr.o)
-                0x0000000000091486                _sbrk_r
- .text          0x00000000000914a9       0x5c c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-s_fpclassify.o)
-                0x00000000000914a9                __fpclassifyd
- .text          0x0000000000091505      0x8f1 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-svfiprintf.o)
-                0x0000000000091505                __ssprint_r
-                0x0000000000091629                _svfiprintf_r
- .text          0x0000000000091df6       0x64 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-callocr.o)
-                0x0000000000091df6                _calloc_r
- .text          0x0000000000091e5a      0x271 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-freer.o)
-                0x0000000000091e5a                _malloc_trim_r
-                0x0000000000091f0e                _free_r
- .text          0x00000000000920cb      0x1d0 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-glue.o)
-                0x00000000000920cb                _read
-                0x00000000000920e5                _write
-                0x00000000000920ff                _open
-                0x0000000000092119                _close
-                0x0000000000092133                _isatty
-                0x000000000009214e                _lseek
-                0x0000000000092169                _fstat
-                0x0000000000092184                _times
-                0x000000000009219f                _time
-                0x00000000000921ba                _creat
-                0x00000000000921d5                _link
-                0x00000000000921f0                _unlink
-                0x000000000009220b                _fork
-                0x0000000000092225                isatty
-                0x0000000000092227                __unlink
-                0x0000000000092229                _exit
-                0x000000000009222d                _kill
-                0x0000000000092231                _getpid
-                0x0000000000092236                _sbrk
- .text          0x000000000009229b       0x44 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memmove.o)
-                0x000000000009229b                memmove
- .text          0x00000000000922df      0x33c c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-reallocr.o)
-                0x00000000000922df                _realloc_r
- .text          0x000000000009261b        0x9 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-errno.o)
-                0x000000000009261b                __errno
- .text          0x0000000000092624      0x204 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(__udivsi3.o)
-                0x0000000000092624                __udivsi3
- .text          0x0000000000092828       0x30 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(__divsi3.o)
-                0x0000000000092828                __divsi3
- .text          0x0000000000092858      0x1b0 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(__umodsi3.o)
-                0x0000000000092858                __umodsi3
- .text          0x0000000000092a08       0x24 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(__modsi3.o)
-                0x0000000000092a08                __modsi3
- .text          0x0000000000092a2c      0x682 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(adddf3.o)
-                0x0000000000092a2c                __adddf3
- *fill*         0x00000000000930ae        0x2 00
- .text          0x00000000000930b0      0x5c8 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(divdf3.o)
-                0x00000000000930b0                __divdf3
- .text          0x0000000000093678       0x7f c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(eqdf2.o)
-                0x0000000000093678                __nedf2
-                0x0000000000093678                __eqdf2
- .text          0x00000000000936f7       0xca c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(gedf2.o)
-                0x00000000000936f7                __gedf2
-                0x00000000000936f7                __gtdf2
- .text          0x00000000000937c1       0xcb c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(ledf2.o)
-                0x00000000000937c1                __ledf2
-                0x00000000000937c1                __ltdf2
- .text          0x000000000009388c      0x488 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(muldf3.o)
-                0x000000000009388c                __muldf3
- .text          0x0000000000093d14      0x693 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(subdf3.o)
-                0x0000000000093d14                __subdf3
- .text          0x00000000000943a7       0x64 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(fixdfsi.o)
-                0x00000000000943a7                __fixdfsi
- .text          0x000000000009440b       0x61 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(floatsidf.o)
-                0x000000000009440b                __floatsidf
- .text          0x000000000009446c       0x4f c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(floatunsidf.o)
-                0x000000000009446c                __floatunsidf
-                0x00000000000944bb                _flash_end = ABSOLUTE (.)
+                0x000000000008e7b2       0x17 C:/Users/sato/Documents/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/ChipLib/SW4063V1416/Components/Library\libMicroSpecific_JN516x.a(MicroSyscall_ba.o)
+                0x000000000008e7b2                vMicroSyscall
+ .text          0x000000000008e7c9       0x12 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memset.o)
+                0x000000000008e7c9                memset
+ .text          0x000000000008e7db       0x84 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-sprintf.o)
+                0x000000000008e7db                _sprintf_r
+                0x000000000008e819                sprintf
+ .text          0x000000000008e85f       0x25 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-strcmp.o)
+                0x000000000008e85f                strcmp
+ .text          0x000000000008e884       0x15 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-strcpy.o)
+                0x000000000008e884                strcpy
+ .text          0x000000000008e899       0x12 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-strlen.o)
+                0x000000000008e899                strlen
+ *fill*         0x000000000008e8ab        0x1 00
+ .text          0x000000000008e8ac     0x10e4 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-svfprintf.o)
+                0x000000000008e8ac                _svfprintf_r
+ .text          0x000000000008f990      0xd83 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-dtoa.o)
+                0x000000000008fadb                _dtoa_r
+ .text          0x0000000000090713       0x86 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-locale.o)
+                0x0000000000090713                _setlocale_r
+                0x0000000000090759                __locale_charset
+                0x0000000000090762                __locale_mb_cur_max
+                0x000000000009076b                __locale_msgcharset
+                0x0000000000090774                __locale_cjk_lang
+                0x0000000000090779                _localeconv_r
+                0x0000000000090782                setlocale
+                0x0000000000090790                localeconv
+ .text          0x0000000000090799      0x4ba c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mallocr.o)
+                0x0000000000090799                _malloc_r
+ .text          0x0000000000090c53       0x19 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memchr.o)
+                0x0000000000090c53                memchr
+ .text          0x0000000000090c6c       0x19 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memcpy.o)
+ .text          0x0000000000090c85        0x6 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mlock.o)
+                0x0000000000090c85                __malloc_lock
+                0x0000000000090c88                __malloc_unlock
+ .text          0x0000000000090c8b      0x8bb c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mprec.o)
+                0x0000000000090c8b                _Balloc
+                0x0000000000090ce3                _Bfree
+                0x0000000000090cfd                __multadd
+                0x0000000000090d8a                __s2b
+                0x0000000000090e17                __hi0bits
+                0x0000000000090e6c                __lo0bits
+                0x0000000000090ee5                __i2b
+                0x0000000000090efa                __multiply
+                0x000000000009103b                __pow5mult
+                0x00000000000910ba                __lshift
+                0x000000000009116e                __mcmp
+                0x00000000000911ad                __mdiff
+                0x000000000009128f                __ulp
+                0x00000000000912d3                __b2d
+                0x0000000000091376                __d2b
+                0x0000000000091435                __ratio
+                0x0000000000091485                _mprec_log10
+                0x00000000000914b9                __copybits
+                0x00000000000914f2                __any_on
+ .text          0x0000000000091546       0x23 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-sbrkr.o)
+                0x0000000000091546                _sbrk_r
+ .text          0x0000000000091569       0x5c c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-s_fpclassify.o)
+                0x0000000000091569                __fpclassifyd
+ .text          0x00000000000915c5      0x8f1 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-svfiprintf.o)
+                0x00000000000915c5                __ssprint_r
+                0x00000000000916e9                _svfiprintf_r
+ .text          0x0000000000091eb6       0x64 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-callocr.o)
+                0x0000000000091eb6                _calloc_r
+ .text          0x0000000000091f1a      0x271 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-freer.o)
+                0x0000000000091f1a                _malloc_trim_r
+                0x0000000000091fce                _free_r
+ .text          0x000000000009218b      0x1d0 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-glue.o)
+                0x000000000009218b                _read
+                0x00000000000921a5                _write
+                0x00000000000921bf                _open
+                0x00000000000921d9                _close
+                0x00000000000921f3                _isatty
+                0x000000000009220e                _lseek
+                0x0000000000092229                _fstat
+                0x0000000000092244                _times
+                0x000000000009225f                _time
+                0x000000000009227a                _creat
+                0x0000000000092295                _link
+                0x00000000000922b0                _unlink
+                0x00000000000922cb                _fork
+                0x00000000000922e5                isatty
+                0x00000000000922e7                __unlink
+                0x00000000000922e9                _exit
+                0x00000000000922ed                _kill
+                0x00000000000922f1                _getpid
+                0x00000000000922f6                _sbrk
+ .text          0x000000000009235b       0x44 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memmove.o)
+                0x000000000009235b                memmove
+ .text          0x000000000009239f      0x33c c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-reallocr.o)
+                0x000000000009239f                _realloc_r
+ .text          0x00000000000926db        0x9 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-errno.o)
+                0x00000000000926db                __errno
+ .text          0x00000000000926e4      0x204 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(__udivsi3.o)
+                0x00000000000926e4                __udivsi3
+ .text          0x00000000000928e8       0x30 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(__divsi3.o)
+                0x00000000000928e8                __divsi3
+ .text          0x0000000000092918      0x1b0 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(__umodsi3.o)
+                0x0000000000092918                __umodsi3
+ .text          0x0000000000092ac8       0x24 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(__modsi3.o)
+                0x0000000000092ac8                __modsi3
+ .text          0x0000000000092aec      0x682 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(adddf3.o)
+                0x0000000000092aec                __adddf3
+ *fill*         0x000000000009316e        0x2 00
+ .text          0x0000000000093170      0x5c8 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(divdf3.o)
+                0x0000000000093170                __divdf3
+ .text          0x0000000000093738       0x7f c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(eqdf2.o)
+                0x0000000000093738                __nedf2
+                0x0000000000093738                __eqdf2
+ .text          0x00000000000937b7       0xca c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(gedf2.o)
+                0x00000000000937b7                __gedf2
+                0x00000000000937b7                __gtdf2
+ .text          0x0000000000093881       0xcb c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(ledf2.o)
+                0x0000000000093881                __ledf2
+                0x0000000000093881                __ltdf2
+ .text          0x000000000009394c      0x488 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(muldf3.o)
+                0x000000000009394c                __muldf3
+ .text          0x0000000000093dd4      0x693 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(subdf3.o)
+                0x0000000000093dd4                __subdf3
+ .text          0x0000000000094467       0x64 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(fixdfsi.o)
+                0x0000000000094467                __fixdfsi
+ .text          0x00000000000944cb       0x61 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(floatsidf.o)
+                0x00000000000944cb                __floatsidf
+ .text          0x000000000009452c       0x4f c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(floatunsidf.o)
+                0x000000000009452c                __floatunsidf
+                0x000000000009457b                _flash_end = ABSOLUTE (.)
 
-.rela.dyn       0x00000000000944bc        0x0
+.rela.dyn       0x000000000009457c        0x0
  .rela.text     0x0000000000000000        0x0 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-sprintf.o)
  .rela.text.unlikely
                 0x0000000000000000        0x0 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-sprintf.o)
@@ -1355,259 +1354,261 @@ LOAD c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r3
  .rela.data     0x0000000000000000        0x0 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-sprintf.o)
                 0x000000000400004c                . = ORIGIN (ram)
 
-.data           0x000000000400004c      0x8c8 load address 0x00000000000944bc
+.data           0x000000000400004c      0x8d0 load address 0x000000000009457c
                 0x000000000400004c                _ram_data_start = ABSOLUTE (.)
  *(.data*)
- .data          0x000000000400004c        0x1 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans3.ltrans.o
-                0x000000000400004c                _mwx_periph_u8_grain_gpio
- .data          0x000000000400004d        0x1 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans9.ltrans.o
-                0x000000000400004d                u8TxWkrNow.28722
- .data          0x000000000400004e        0x1 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans10.ltrans.o
-                0x000000000400004e                _toconet_tx_u8_init_queue_flag
- .data          0x000000000400004f        0x1 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans11.ltrans.o
- .data          0x0000000004000050        0x1 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans14.ltrans.o
+ .data          0x000000000400004c        0x8 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans3.ltrans.o
+                0x000000000400004c                u32HeapStart
+ .data          0x0000000004000054        0x1 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans4.ltrans.o
+                0x0000000004000054                _mwx_periph_u8_grain_gpio
+ .data          0x0000000004000055        0x1 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans7.ltrans.o
+                0x0000000004000055                _toconet_tx_u8_init_queue_flag
+ .data          0x0000000004000056        0x1 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans11.ltrans.o
  .data.initinboot
-                0x0000000004000051        0x1 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans14.ltrans.o
-                0x0000000004000051                gMAC_u8MaxBuffers
- .data          0x0000000004000052        0x2 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans15.ltrans.o
- .data          0x0000000004000054        0x4 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans16.ltrans.o
-                0x0000000004000054                u32HeapStart
- .data          0x0000000004000058      0x430 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-impure.o)
-                0x0000000004000058                _impure_ptr
- .data          0x0000000004000488       0x7c c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-locale.o)
-                0x0000000004000488                __mb_cur_max
- .data          0x0000000004000504      0x410 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mallocr.o)
-                0x0000000004000504                __malloc_sbrk_base
-                0x0000000004000508                __malloc_trim_threshold
-                0x000000000400050c                __malloc_av_
+                0x0000000004000057        0x1 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans11.ltrans.o
+                0x0000000004000057                gMAC_u8MaxBuffers
+ .data          0x0000000004000058        0x2 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans16.ltrans.o
+ .data          0x000000000400005a        0x1 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans21.ltrans.o
+                0x000000000400005a                u8TxWkrNow.28825
+ *fill*         0x000000000400005b        0x5 00
+ .data          0x0000000004000060      0x430 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-impure.o)
+                0x0000000004000060                _impure_ptr
+ .data          0x0000000004000490       0x7c c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-locale.o)
+                0x0000000004000490                __mb_cur_max
+ .data          0x000000000400050c      0x410 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mallocr.o)
+                0x000000000400050c                __malloc_sbrk_base
+                0x0000000004000510                __malloc_trim_threshold
+                0x0000000004000514                __malloc_av_
  *(.data.*)
-                0x0000000004000914                . = ALIGN (0x4)
-                0x0000000004000914                _ram_data_end = ABSOLUTE (.)
+                0x000000000400091c                . = ALIGN (0x4)
+                0x000000000400091c                _ram_data_end = ABSOLUTE (.)
 
-.bss            0x0000000004000914     0x1710 load address 0x0000000000094d84
-                0x0000000004000914                _bss_start = ABSOLUTE (.)
+.bss            0x000000000400091c     0x1714 load address 0x0000000000094e4c
+                0x000000000400091c                _bss_start = ABSOLUTE (.)
  *(.bss*)
- .bss           0x0000000004000914      0x718 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans0.ltrans.o
-                0x0000000004000914                prSpiAppCallback.27114
-                0x0000000004000918                prSiAppCallback.28349
-                0x000000000400091c                prAppMcpsCallback.5765
-                0x0000000004000920                prAppMlmeCallback.5766
+ .bss           0x000000000400091c        0xc C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans0.ltrans.o
+ .bss           0x0000000004000928       0x24 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans1.ltrans.o
+                0x0000000004000928                pvPostFunc.4597
+                0x000000000400092c                u32PostArg.4596
+                0x0000000004000930                evPost.4595
+ .bss           0x000000000400094c       0x40 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans2.ltrans.o
+                0x000000000400094c                g_sLP
+                0x0000000004000988                g_pvMac
  .bss.initinboot
-                0x000000000400102c        0x4 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans0.ltrans.o
-                0x000000000400102c                prSysCtrlAppCallback.27322
- .bss           0x0000000004001030       0x40 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans1.ltrans.o
-                0x0000000004001030                g_sLP
-                0x000000000400106c                g_pvMac
- .bss.initinboot
-                0x0000000004001070      0x1c0 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans1.ltrans.o
-                0x0000000004001070                g_sMac
- .bss           0x0000000004001230        0x8 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans2.ltrans.o
- .bss           0x0000000004001238       0x94 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans3.ltrans.o
-                0x0000000004001238                Timer4
-                0x0000000004001240                Analogue
-                0x0000000004001258                SPI
-                0x000000000400125c                SerialParser
-                0x0000000004001298                Serial1
-                0x00000000040012b8                Buttons
-                0x00000000040012c0                PulseCounter1
-                0x00000000040012c4                PulseCounter0
- .bss           0x00000000040012cc       0x24 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans4.ltrans.o
-                0x00000000040012cc                bTxEventQueued.22700
-                0x00000000040012cd                u8TxEventStatus.22701
-                0x00000000040012d0                sAppHousekeeping
-                0x00000000040012e8                prApAppCallback.26880
-                0x00000000040012ec                bIntEnableFlag.26877
- .bss           0x00000000040012f0       0x24 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans5.ltrans.o
-                0x00000000040012f0                pvPostFunc.4494
-                0x00000000040012f4                u32PostArg.4493
-                0x00000000040012f8                evPost.4492
- .bss           0x0000000004001314       0x68 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans6.ltrans.o
-                0x0000000004001314                prUart1AppCallback.27786
-                0x0000000004001318                prUart0AppCallback.27785
-                0x000000000400131c                sOpt.7018
-                0x000000000400132c                _psSerial
- .bss           0x000000000400137c       0x90 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans7.ltrans.o
-                0x000000000400137c                _ZL5_vcbs.9425
-                0x0000000004001390                sToCoNet_AppContext
-                0x00000000040013ac                sToCoNet_Context
-                0x00000000040013f4                sAssocSecurity.15588
-                0x0000000004001400                g_bJenieBackwardsCompatibilityMode
- .bss           0x000000000400140c      0x290 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans8.ltrans.o
-                0x000000000400140c                u8AppId_Pkt_head.6715
-                0x0000000004001410                u32AppId.6712
-                0x0000000004001414                u32MyAddr.6714
-                0x0000000004001418                bRxQueue_Init.6713
-                0x000000000400141c                psRxQueueList.6711
-                0x0000000004001430                asEventHandler.4480
-                0x00000000040014d0                sEvVars
-                0x00000000040014ec                u32TickCount_ms
-                0x00000000040014f0                au8Txdatabuff_idx_sTxQueue
-                0x00000000040014f4                u8TxBuffSiz_sTxQueue
-                0x00000000040014f8                sTxdatabuff_sTxQueue
-                0x00000000040014fc                sTxQueue
-                0x0000000004001518                au8Rxdatabuff_idx_sRxQueue
-                0x000000000400151c                u8RxBuffSiz_sRxQueue
-                0x0000000004001520                sRxdatabuff_sRxQueue
-                0x0000000004001524                sRxQueue
-                0x0000000004001540                au8Rxdatabuff_idx_sRxQueueCmd
-                0x0000000004001544                u8RxBuffSiz_sRxQueueCmd
-                0x0000000004001548                sRxdatabuff_sRxQueueCmd
-                0x000000000400154c                sRxQueueCmd.4931
-                0x0000000004001568                sContext.6836
-                0x0000000004001594                the_twelite
-                0x000000000400162c                TWENET_u8RFdevice_minor.6136
-                0x000000000400162d                TWENET_u8RFdevice_major.6135
-                0x000000000400162e                _TWENET_TX_POWER_MAX
-                0x0000000004001630                sToCoNet_Modules
- .bss           0x000000000400169c       0x38 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans9.ltrans.o
-                0x000000000400169c                sCh_Context.5399
-                0x00000000040016a0                the_vhw
-                0x00000000040016a4                the_vnet2
-                0x00000000040016a8                the_vnet
-                0x00000000040016ac                the_vapp
-                0x00000000040016b0                asTx.28678
- .bss.initinboot
-                0x00000000040016d4        0x1 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans9.ltrans.o
- *fill*         0x00000000040016d5        0x3 00
- .bss           0x00000000040016d8      0x618 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans10.ltrans.o
-                0x00000000040016d8                prAppHwCallback.5767
-                0x00000000040016dc                TxWorker_u8Num.28679
-                0x00000000040016dd                gbTimeOutFlag.27318
- .bss           0x0000000004001cf0        0x2 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans11.ltrans.o
- *fill*         0x0000000004001cf2        0x2 00
- .bss           0x0000000004001cf4       0x28 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans12.ltrans.o
-                0x0000000004001cf4                asUARTS.7011
+                0x000000000400098c      0x1c0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans2.ltrans.o
+                0x000000000400098c                g_sMac
+ .bss           0x0000000004000b4c        0x2 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans3.ltrans.o
+ *fill*         0x0000000004000b4e        0x2 00
  .bss.dontinitinboot
-                0x0000000004001d1c        0x1 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans13.ltrans.o
-                0x0000000004001d1c                u8SecurityMode.24868
- *fill*         0x0000000004001d1d        0x3 00
- .bss           0x0000000004001d20        0x4 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans14.ltrans.o
-                0x0000000004001d20                i8TxPower.18378
+                0x0000000004000b50        0x4 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans3.ltrans.o
+ .bss           0x0000000004000b54       0x94 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans4.ltrans.o
+                0x0000000004000b54                Timer4
+                0x0000000004000b5c                Analogue
+                0x0000000004000b74                SPI
+                0x0000000004000b78                SerialParser
+                0x0000000004000bb4                Serial1
+                0x0000000004000bd4                Buttons
+                0x0000000004000bdc                PulseCounter1
+                0x0000000004000be0                PulseCounter0
+ .bss           0x0000000004000be8      0x71c C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans5.ltrans.o
+                0x0000000004000be8                prSpiAppCallback.27217
+                0x0000000004000bec                prSiAppCallback.28452
+                0x0000000004000bf0                prAppMcpsCallback.5868
+                0x0000000004000bf4                prAppMlmeCallback.5869
+                0x0000000004000bf8                gbTimeOutFlag.27421
  .bss.initinboot
-                0x0000000004001d24        0x8 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans14.ltrans.o
-                0x0000000004001d24                g_u32MacAddrLocation
-                0x0000000004001d28                prvUserTxStartedCallback
- .bss           0x0000000004001d2c       0x84 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans15.ltrans.o
-                0x0000000004001d2c                sMcpsIndQueue.5761
-                0x0000000004001d3c                sMcpsIndBufferQueue.5759
-                0x0000000004001d4c                sMlmeIndQueue.5762
-                0x0000000004001d5c                sMlmeIndBufferQueue.5760
-                0x0000000004001d6c                sHwIndQueue.5763
-                0x0000000004001d7c                sHwIndBufferQueue.5764
-                0x0000000004001d8c                _u32_INT_adc_comp
-                0x0000000004001d90                _u32_INT_ticktimer
-                0x0000000004001d94                communication_established_check_flg
-                0x0000000004001d98                the_vsettings
-                0x0000000004001d9c                _periph_availmap
- .bss           0x0000000004001db0        0x4 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans16.ltrans.o
+                0x0000000004001304        0x4 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans5.ltrans.o
+                0x0000000004001304                prSysCtrlAppCallback.27425
+ .bss           0x0000000004001308       0x24 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans6.ltrans.o
+                0x0000000004001308                bTxEventQueued.22803
+                0x0000000004001309                u8TxEventStatus.22804
+                0x000000000400130c                sAppHousekeeping
+                0x0000000004001324                prApAppCallback.26983
+                0x0000000004001328                bIntEnableFlag.26980
+ .bss           0x000000000400132c      0x618 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans7.ltrans.o
+                0x000000000400132c                prAppHwCallback.5870
+                0x0000000004001330                TxWorker_u8Num.28782
+ .bss           0x0000000004001944        0x4 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans8.ltrans.o
+ .bss           0x0000000004001948       0x90 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans9.ltrans.o
+                0x0000000004001948                _ZL5_vcbs.9528
+                0x000000000400195c                sToCoNet_AppContext
+                0x0000000004001978                sToCoNet_Context
+                0x00000000040019c0                sAssocSecurity.15691
+                0x00000000040019cc                g_bJenieBackwardsCompatibilityMode
+ .bss           0x00000000040019d8      0x290 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans10.ltrans.o
+                0x00000000040019d8                u8AppId_Pkt_head.6818
+                0x00000000040019dc                u32AppId.6815
+                0x00000000040019e0                u32MyAddr.6817
+                0x00000000040019e4                bRxQueue_Init.6816
+                0x00000000040019e8                psRxQueueList.6814
+                0x00000000040019fc                asEventHandler.4583
+                0x0000000004001a9c                sEvVars
+                0x0000000004001ab8                u32TickCount_ms
+                0x0000000004001abc                au8Txdatabuff_idx_sTxQueue
+                0x0000000004001ac0                u8TxBuffSiz_sTxQueue
+                0x0000000004001ac4                sTxdatabuff_sTxQueue
+                0x0000000004001ac8                sTxQueue
+                0x0000000004001ae4                au8Rxdatabuff_idx_sRxQueue
+                0x0000000004001ae8                u8RxBuffSiz_sRxQueue
+                0x0000000004001aec                sRxdatabuff_sRxQueue
+                0x0000000004001af0                sRxQueue
+                0x0000000004001b0c                au8Rxdatabuff_idx_sRxQueueCmd
+                0x0000000004001b10                u8RxBuffSiz_sRxQueueCmd
+                0x0000000004001b14                sRxdatabuff_sRxQueueCmd
+                0x0000000004001b18                sRxQueueCmd.5034
+                0x0000000004001b34                sContext.6939
+                0x0000000004001b60                the_twelite
+                0x0000000004001bf8                TWENET_u8RFdevice_minor.6239
+                0x0000000004001bf9                TWENET_u8RFdevice_major.6238
+                0x0000000004001bfa                _TWENET_TX_POWER_MAX
+                0x0000000004001bfc                sToCoNet_Modules
+ .bss           0x0000000004001c68       0x24 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans11.ltrans.o
+                0x0000000004001c68                i8TxPower.18481
+                0x0000000004001c6c                g_sXcv
+                0x0000000004001c70                prMcpsRequest.12075
+                0x0000000004001c74                prMlmeRequest.12074
+                0x0000000004001c78                prOriginalHandler.6949
+ .bss.initinboot
+                0x0000000004001c8c        0x8 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans11.ltrans.o
+                0x0000000004001c8c                g_u32MacAddrLocation
+                0x0000000004001c90                prvUserTxStartedCallback
+ .bss           0x0000000004001c94       0x74 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans12.ltrans.o
+                0x0000000004001c94                the_mac
+                0x0000000004001cb0                Serial
+                0x0000000004001cd0                Wire
+                0x0000000004001ce8                Timer3
+                0x0000000004001cf0                Timer2
+                0x0000000004001cf8                Timer1
+                0x0000000004001d00                Timer0
+ .bss           0x0000000004001d08       0x28 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans13.ltrans.o
+                0x0000000004001d08                asUARTS.7114
  .bss.dontinitinboot
-                0x0000000004001db4        0x4 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans16.ltrans.o
- .bss           0x0000000004001db8       0x5c C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans17.ltrans.o
-                0x0000000004001db8                g_sXcv
-                0x0000000004001dbc                prMcpsRequest.11972
-                0x0000000004001dc0                prMlmeRequest.11971
-                0x0000000004001dc4                prOriginalHandler.6846
-                0x0000000004001dc8                LED_mode
-                0x0000000004001dc9                current_mode
-                0x0000000004001dcc                Wire
-                0x0000000004001de4                Timer3
-                0x0000000004001dec                Timer2
-                0x0000000004001df4                Timer1
-                0x0000000004001dfc                Timer0
- .bss           0x0000000004001e14      0x114 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans18.ltrans.o
-                0x0000000004001e14                lcd_control
-                0x0000000004001e18                lcd_data_buf1
-                0x0000000004001e38                the_mac
-                0x0000000004001e54                Serial
- .bss           0x0000000004001f28       0x6c C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans20.ltrans.o
-                0x0000000004001f28                _SERIAL_bmTxIntEnabled
-                0x0000000004001f2c                asSerialPorts
-                0x0000000004001f64                sSerCmd_P3.7681
-                0x0000000004001f70                apfTimerAppCallback.27531
-                0x0000000004001f84                prTickTimeAppCallback
-                0x0000000004001f88                au16TimerSettings.27480
- .bss           0x0000000004001f94       0x14 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans21.ltrans.o
-                0x0000000004001f94                s_sTimerList
-                0x0000000004001fa4                u8AssocResponsesInProgress.15587
+                0x0000000004001d30        0x1 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans14.ltrans.o
+                0x0000000004001d30                u8SecurityMode.24971
+ *fill*         0x0000000004001d31        0x3 00
+ .bss           0x0000000004001d34       0x64 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans15.ltrans.o
+                0x0000000004001d34                prUart1AppCallback.27889
+                0x0000000004001d38                prUart0AppCallback.27888
+                0x0000000004001d3c                sOpt.7121
+                0x0000000004001d4c                _psSerial
+ .bss           0x0000000004001d98       0x80 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans16.ltrans.o
+                0x0000000004001d98                sMcpsIndQueue.5864
+                0x0000000004001da8                sMcpsIndBufferQueue.5862
+                0x0000000004001db8                sMlmeIndQueue.5865
+                0x0000000004001dc8                sMlmeIndBufferQueue.5863
+                0x0000000004001dd8                sHwIndQueue.5866
+                0x0000000004001de8                sHwIndBufferQueue.5867
+                0x0000000004001df8                _u32_INT_adc_comp
+                0x0000000004001dfc                _u32_INT_ticktimer
+                0x0000000004001e00                the_vsettings
+                0x0000000004001e04                _periph_availmap
+ .bss           0x0000000004001e18       0xe0 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans17.ltrans.o
+                0x0000000004001e18                communication_established_check_flg
+                0x0000000004001e19                LED_mode
+                0x0000000004001e1c                lcd_control
+                0x0000000004001e20                lcd_data_buf2
+                0x0000000004001e40                lcd_data_buf1
+                0x0000000004001e60                current_mode
+ .bss           0x0000000004001ef8       0x1c C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans18.ltrans.o
+ .bss.initinboot
+                0x0000000004001f14        0x1 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans18.ltrans.o
+ *fill*         0x0000000004001f15        0x3 00
+ .bss           0x0000000004001f18       0x6c C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans19.ltrans.o
+                0x0000000004001f18                _SERIAL_bmTxIntEnabled
+                0x0000000004001f1c                asSerialPorts
+                0x0000000004001f54                sSerCmd_P3.7784
+                0x0000000004001f60                apfTimerAppCallback.27634
+                0x0000000004001f74                prTickTimeAppCallback
+                0x0000000004001f78                au16TimerSettings.27583
+ .bss           0x0000000004001f84       0x14 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans20.ltrans.o
+                0x0000000004001f84                s_sTimerList
+                0x0000000004001f94                u8AssocResponsesInProgress.15690
+ .bss           0x0000000004001f98       0x1c C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans21.ltrans.o
+                0x0000000004001f98                sCh_Context.5502
+                0x0000000004001f9c                the_vhw
+                0x0000000004001fa0                the_vnet2
+                0x0000000004001fa4                the_vnet
+                0x0000000004001fa8                the_vapp
+                0x0000000004001fac                asTx.28781
  .bss.dontinitinboot
-                0x0000000004001fa8       0x40 C:/Users/sato/Documents/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/ChipLib/SW4063V1416/Components/Library\libBoot_JN516x.a(ExceptionHandler.o)
-                0x0000000004001fa8                isr_handlers
- .bss           0x0000000004001fe8       0x34 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mallocr.o)
-                0x0000000004001fe8                __malloc_current_mallinfo
-                0x0000000004002010                __malloc_max_total_mem
-                0x0000000004002014                __malloc_max_sbrked_mem
-                0x0000000004002018                __malloc_top_pad
- .bss           0x000000000400201c        0x4 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-glue.o)
+                0x0000000004001fb4       0x40 C:/Users/sato/Documents/MWSTAGE-2022-08_win10-1/MWSTAGE/MWSDK/ChipLib/SW4063V1416/Components/Library\libBoot_JN516x.a(ExceptionHandler.o)
+                0x0000000004001fb4                isr_handlers
+ .bss           0x0000000004001ff4       0x34 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-mallocr.o)
+                0x0000000004001ff4                __malloc_current_mallinfo
+                0x000000000400201c                __malloc_max_total_mem
+                0x0000000004002020                __malloc_max_sbrked_mem
+                0x0000000004002024                __malloc_top_pad
+ .bss           0x0000000004002028        0x4 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-glue.o)
  *(.bss.*)
  *(.scommon*)
- .scommon       0x0000000004002020        0x4 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-reent.o)
-                0x0000000004002020                errno
+ .scommon       0x000000000400202c        0x4 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-reent.o)
+                0x000000000400202c                errno
  *(.scommon.*)
  *(COMMON)
-                0x0000000004002024                . = ALIGN (0x4)
-                0x0000000004002024                _bss_end = ABSOLUTE (.)
-                0x0000000004002024                end = .
+                0x0000000004002030                . = ALIGN (0x4)
+                0x0000000004002030                _bss_end = ABSOLUTE (.)
+                0x0000000004002030                end = .
 
-.heap           0x0000000004002024      0xd16 load address 0x0000000000096494
-                0x0000000004002024                _heap_start = ABSOLUTE (.)
-                0x0000000004002d3a                . = (. + __minimum_heap_size)
- *fill*         0x0000000004002024      0xd16 00
+.heap           0x0000000004002030      0xd16 load address 0x0000000000096560
+                0x0000000004002030                _heap_start = ABSOLUTE (.)
+                0x0000000004002d46                . = (. + __minimum_heap_size)
+ *fill*         0x0000000004002030      0xd16 00
 
-.stack          0x0000000004007800      0x800 load address 0x000000000009bc70
+.stack          0x0000000004007800      0x800 load address 0x000000000009bd30
                 0x0000000004007800                _heap_end = ABSOLUTE (.)
                 0x0000000004007800                _stack_low_water_mark = ABSOLUTE (.)
                 0x0000000004008000                . = (. + __stack_size)
  *fill*         0x0000000004007800      0x800 00
                 0x0000000004008000                _stack = .
 
-.test           0x0000000000094d84        0x1
-                0x0000000000094d84        0x1 BYTE 0xff
-                0x00000000000944bc                _flash_data_start = LOADADDR (.data)
-                0x00000000000008c8                _ram_data_len = (((_ram_data_end - _ram_data_start) + 0x3) & 0xfffffffffffffffc)
-                0x0000000000001710                _bss_len = (((_bss_end - _bss_start) + 0x3) & 0xfffffffffffffffc)
-                0x0000000000014d84                _image_len = ((((_flash_end - _flash_start) + _ram_data_len) + 0x3) & 0xfffffffffffffffc)
+.test           0x0000000000094e4c        0x1
+                0x0000000000094e4c        0x1 BYTE 0xff
+                0x000000000009457c                _flash_data_start = LOADADDR (.data)
+                0x00000000000008d0                _ram_data_len = (((_ram_data_end - _ram_data_start) + 0x3) & 0xfffffffffffffffc)
+                0x0000000000001714                _bss_len = (((_bss_end - _bss_start) + 0x3) & 0xfffffffffffffffc)
+                0x0000000000014e4c                _image_len = ((((_flash_end - _flash_start) + _ram_data_len) + 0x3) & 0xfffffffffffffffc)
                 0x0000000004008000                _ram_top = (ABSOLUTE (ORIGIN (ram)) + 0x7fb4)
                 0x0000000004008000                ram_top = (ABSOLUTE (ORIGIN (ram)) + 0x7fb4)
                 0x0000000001001580                _app_ram_start = 0x1001580
-                0x0000000004000054                PROVIDE (_heap_location, u32HeapStart)
-                0x0000000004000054                PROVIDE (heap_location, u32HeapStart)
-                0x00000000000872b2                TSV_eOpenVector = TSV_eOpen
-                0x0000000000086e33                TSV_eStartVector = TSV_eStart
-                0x000000000008d8f2                TSV_eStopVector = TSV_eStop
-                0x0000000000083567                pvAppApiGetMacHandle = pvAppApiDefGetMacHandle
-                0x000000000008beb8                u32AppApiInit = u32AppApiDefInit
-                0x000000000008353c                vAppApiMlmeRequest = vAppApiDefMlmeRequest
-                0x0000000000087588                vAppApiMcpsRequest = vAppApiDefMcpsRequest
-                0x0000000000087517                eAppApiPlmeSet = eAppApiDefPlmeSet
-                0x00000000000874c5                eAppApiPlmeGet = eAppApiDefPlmeGet
-                0x00000000000874bc                pvAppApiGetMacAddrLocation = pvAppApiDefGetMacAddrLocation
-                0x00000000000873a1                vAppApiSaveMacSettings = vAppApiDefSaveMacSettings
-                0x00000000000872ba                vAppApiRestoreMacSettings = vAppApiDefRestoreMacSettings
+                0x000000000400004c                PROVIDE (_heap_location, u32HeapStart)
+                0x000000000400004c                PROVIDE (heap_location, u32HeapStart)
+                0x000000000008cb4f                TSV_eOpenVector = TSV_eOpen
+                0x000000000008c43f                TSV_eStartVector = TSV_eStart
+                0x000000000008d48e                TSV_eStopVector = TSV_eStop
+                0x0000000000084816                pvAppApiGetMacHandle = pvAppApiDefGetMacHandle
+                0x000000000008907d                u32AppApiInit = u32AppApiDefInit
+                0x00000000000847eb                vAppApiMlmeRequest = vAppApiDefMlmeRequest
+                0x000000000008dba8                vAppApiMcpsRequest = vAppApiDefMcpsRequest
+                0x000000000008cdb4                eAppApiPlmeSet = eAppApiDefPlmeSet
+                0x000000000008cd62                eAppApiPlmeGet = eAppApiDefPlmeGet
+                0x000000000008cd59                pvAppApiGetMacAddrLocation = pvAppApiDefGetMacAddrLocation
+                0x000000000008cc3e                vAppApiSaveMacSettings = vAppApiDefSaveMacSettings
+                0x000000000008cb57                vAppApiRestoreMacSettings = vAppApiDefRestoreMacSettings
 OUTPUT(objs_RED/Wireless_EM_Switch_RED_L1305_V0-1-0.elf elf32-ba)
 
 .comment        0x0000000000000000       0x11
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans0.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans1.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans2.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans3.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans4.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans5.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans6.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans7.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans8.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans9.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans10.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans11.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans12.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans13.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans14.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans15.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans16.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans17.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans18.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans19.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans20.ltrans.o
- .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccxUxRgS.ltrans21.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans1.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans2.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans3.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans4.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans5.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans6.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans7.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans8.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans9.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans10.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans11.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans12.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans13.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans14.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans15.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans16.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans17.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans18.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans19.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans20.ltrans.o
+ .comment       0x0000000000000000       0x12 C:\Users\sato\AppData\Local\Temp\ccZhSMxs.ltrans21.ltrans.o
  .comment       0x0000000000000000       0x12 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/../../../../ba-elf/lib/mcpu_jn51xx_sizeopt\libc.a(lib_a-memcmp.o)
  .comment       0x0000000000000000       0x12 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_fixunsdfsi.o)
  .comment       0x0000000000000000       0x12 c:/users/sato/documents/mwstage-2022-08_win10-1/mwstage/tools/ba-elf-ba2-r36379.w10/bin/../lib/gcc/ba-elf/4.7.4/mcpu_jn51xx_sizeopt\libgcc.a(_udivdi3.o)
