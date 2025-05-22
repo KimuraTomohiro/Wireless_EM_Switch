@@ -26,12 +26,7 @@ MWX_DIO_INT(PIN_DIGITAL::DIO18,uint32_t arg, uint8_t& handled){ //停止ボタ�
     }else if(current_mode == 2){
         change_mode(4);
     }
-    handled = false;
-
-}
-
-MWX_DIO_EVENT(PIN_DIGITAL::DIO18, uint32_t arg){
-
+    handled = true;
 
 }
 

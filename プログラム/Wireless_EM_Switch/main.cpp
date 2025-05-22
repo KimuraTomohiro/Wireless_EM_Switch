@@ -57,8 +57,10 @@ void setup() {
 
     pinMode(LED_R, OUTPUT_INIT_HIGH);    //LEDを制御しているのがPch MOSFETなので、ロジックと出力が逆になる
     pinMode(LED_G, OUTPUT_INIT_HIGH);
-    pinMode(EM_SW,INPUT);
-    attachIntDio(EM_SW,PIN_INT_MODE::RISING);
+    pinMode(EM_SW,INPUT_PULLDOWN);
+    pinMode(RESET_SW,INPUT_PULLDOWN);
+    
+
 
 
     Timer0.setup();
@@ -100,13 +102,18 @@ void setup() {
     Serial <<"Presented by Kimura Tomohiro"<< crlf;
     Serial <<"https://github.com/KimuraTomohiro/Wireless_EM_Switch"<< crlf;
 
+
     change_mode(1);
+
 }
 
 
 uint8_t timer4_count = 0;
 /*** loop procedure (called every event) */
 void loop() {
+
+
+
 
     if(Timer4.available()){ 
         timer4_count ++;
@@ -142,10 +149,9 @@ void loop() {
 
     }
 
-    //モード1とモード3の場合疎通が取れていないので一方的な送信のみになり、LCDの表示内容は変化しない。
-    //しかしモード2とモード4の場合受信した情報から電圧情報を取得し表示に反映させる必要があるので、ここでその作業を行う。
-    if(current_mode == 2 || current_mode == 4){   
-
+    if(digitalRead(RESET_SW) == PIN_STATE::HIGH){   
+        vTransmit(0x0,0x02,10);
+        delay(200);
     }
 
 }

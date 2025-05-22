@@ -38,12 +38,12 @@ const char* Serial_text[] = {
     "出力再開"
 };
 
-void vTransmit(uint32_t addr, uint8_t data) {
+void vTransmit(uint32_t addr, uint8_t data, uint8_t retry) {
 
 	if (auto&& pkt = the_twelite.network.use<NWK_SIMPLE>().prepare_tx_packet()) {
 		// set tx packet behavior
 		pkt << tx_addr(addr)  // 0..0xFF (LID 0:parent, FE:child w/ no id, FF:LID broad cast), 0x8XXXXXXX (long address)
-			<< tx_retry(0x3) // set retry (0x3 send four times in total)
+			<< tx_retry(retry) // set retry (0x3 send four times in total)
 			<< tx_packet_delay(0,10,5); // send packet w/ delay (send first packet with randomized delay from 100 to 200ms, repeat every 20ms)
 		// prepare packet payload
 		pack_bytes(pkt.get_payload() // set payload data objects.

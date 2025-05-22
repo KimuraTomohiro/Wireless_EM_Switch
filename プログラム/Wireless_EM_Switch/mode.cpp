@@ -13,7 +13,6 @@ void change_mode(char mode_num){
 
     switch(mode_num){
     case 0:
-
         LED_mode = 4;
         next_mode = current_mode;
         current_mode = 0;
@@ -60,7 +59,6 @@ void change_mode(char mode_num){
         LED_mode = 3;
         sprintf(lcd_data_buf1,"Waiting for connection");
         lcd_control.setCursor(1,0);
-        lcd_control.print("EM");
         break;
 
 
@@ -70,8 +68,16 @@ void change_mode(char mode_num){
         sprintf(lcd_data_buf1,"V1: %dV ,V2: %dV",rx_volt1,rx_volt2);
         current_mode = 4;
         LED_mode = 4;
-        lcd_control.setCursor(1,0);
-        lcd_control.print("EM");
+
+
+        if(rx_status == 0x04){
+            lcd_control.setCursor(1,0);
+            lcd_control.print("EM");
+        }else{
+            lcd_control.setCursor(1,0);
+            lcd_control.print("  ");
+        }
+        
         break;
 
     }
