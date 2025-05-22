@@ -91,6 +91,11 @@ MWX_TIMER_INT(3, uint32_t arg, uint8_t& handled){
     //通信の疎通確認を行う。このブロックがタイマ2の1秒毎に呼ばれ、その間に通信があればcommunication_establishedがtrueになるので疎通確認が取れる。
     //その間に通信がない場合、通信が途絶したとみなしてモード2からモード1に戻る。モード4にいたらモード3に戻る。
     if(communication_established_check_flg == false){ 
+
+        rx_volt1 = 0;
+        rx_volt2 = 0;
+        rx_timestamp = 0;
+
         if(current_mode == 2){
             change_mode(1);
         }else if(current_mode == 4){

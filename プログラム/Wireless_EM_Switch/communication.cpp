@@ -38,11 +38,6 @@ const char* Serial_text[] = {
     "出力再開"
 };
 
-
-
-
-
-
 void vTransmit(uint32_t addr, uint8_t data) {
 
 	if (auto&& pkt = the_twelite.network.use<NWK_SIMPLE>().prepare_tx_packet()) {

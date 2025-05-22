@@ -10,9 +10,6 @@ char next_mode;
 bool release_signal_send_flg = false;
 
 void change_mode(char mode_num){
-    char release_signal_send_count = 0;
-
-
 
     switch(mode_num){
     case 0:
@@ -44,6 +41,9 @@ void change_mode(char mode_num){
     case 2:
         LED_mode = 2;
         lcd_control.clean();
+
+        sprintf(lcd_data_buf1,"V1: %dV ,V2: %dV",rx_volt1,rx_volt2);
+
         while(digitalRead(EM_SW) == PIN_STATE::HIGH){
             delay(100); //緊急停止からの復帰など、ボタンが押された状態の時に放されるまで待つ
         }
@@ -67,12 +67,12 @@ void change_mode(char mode_num){
     case 4:
         detachIntDio(EM_SW);  
         lcd_control.clean();
+        sprintf(lcd_data_buf1,"V1: %dV ,V2: %dV",rx_volt1,rx_volt2);
         current_mode = 4;
         LED_mode = 4;
         lcd_control.setCursor(1,0);
         lcd_control.print("EM");
         break;
-
 
     }
 
