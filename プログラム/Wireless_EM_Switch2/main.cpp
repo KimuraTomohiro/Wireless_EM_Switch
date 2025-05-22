@@ -1,0 +1,109 @@
+#include <TWELITE>
+#include <NWK_SIMPLE>
+#include "main.hpp"
+#include "lcd.hpp"
+#include "LED.hpp"
+#include "communication.hpp"
+#include "Interrupt.hpp"
+
+
+const uint8_t LED_R = 11;    //ほかファイルから参照できるようにする
+const uint8_t LED_G = 13;    //ほかファイルから参照できるようにする
+const uint8_t EM_SW = 18;
+const uint8_t RESET_SW = 19;
+
+
+lcd lcd_control = lcd();    //LCD制御用のインスタンス
+
+
+uint8_t rx_status = 0;
+uint16_t rx_volt1 = 0;
+uint16_t rx_volt2 = 0;
+uint32_t rx_timestamp = 0;
+
+
+/*
+この変数でモードの切替を行う。
+モード0: 緊急復帰動作
+
+モード1: マスター探索中
+    リモコン側から信号を発信して、基板側が返答する形で検索を行う。基板側の返答が取れたらモード2に移行する。
+
+モード2: 通常状態
+    マスター側と疎通が取れている状態。定期的（0.5秒毎）にstatusの通信を行い、LCDの表示を更新する。
+    3回連続で疎通確認が取れない場合（1.5秒間）、モード1に移行する。
+
+モード3: 緊急停止状態（疎通なし）
+    緊急停止ボタンが押された状態。
+    モード1中にボタンが押されたときに移行する。疎通が取れるまで、0.2秒毎に緊急停止信号を送信し続ける。
+    マスター側からの返答があったときはモード4に移行する。
+
+モード4: 緊急停止状態（疎通あり）
+    緊急停止ボタンが押された状態。
+    モード2中にボタンが押されたときに移行する。0.5秒毎にstatusの通信を行い、LCDの表示を更新する。
+    3回連続で疎通確認が取れない場合（1.5秒間）、モード3に移行する。
+    緊急停止ボタンを3秒長押しで緊急停止状態を解除し、モード2に移行する。
+
+
+*/
+
+void setup() {
+    the_twelite.app.use<INTERRUPT>(); //割り込みのアプリケーションビヘイビアを登録
+
+
+    pinMode(LED_R, OUTPUT_INIT_HIGH);    //LEDを制御しているのがPch MOSFETなので、ロジックと出力が逆になる
+    pinMode(LED_G, OUTPUT_INIT_HIGH);
+    pinMode(EM_SW,INPUT_PULLDOWN);
+    pinMode(RESET_SW,INPUT_PULLDOWN);
+    
+
+
+
+    Timer0.setup();
+    Timer0.begin(3,true,false); //LCDの表示更新用のタイマー0を3Hz、割り込みあり、PWM出力なしでスタート
+
+    Timer1.setup();
+    Timer1.begin(2,true,false); //LEDの点滅制御用タイマー1を2Hz、割り込みあり、PWM出力なしでスタート
+
+
+    
+    Wire.begin(WIRE_CONF::WIRE_400KHZ,false);
+    lcd_control.setup();
+
+    	// the twelite main class
+	the_twelite
+		<< TWENET::appid(APP_ID)    // set application ID (identify network group)
+		<< TWENET::channel(CHANNEL) // set channel (pysical channel)
+		<< TWENET::rx_when_idle();  // open receive circuit (if not set, it can't listen packts from others)
+
+	// Register Network
+	auto&& nwksmpl = the_twelite.network.use<NWK_SIMPLE>();
+	nwksmpl << NWK_SIMPLE::logical_id(0xFE) // set Logical ID. (0xFE means a child device with no ID)
+	        << NWK_SIMPLE::repeat_max(3);   // can repeat a packet up to three times. (being kind of a router)
+
+	the_twelite.begin(); // start twelite!
+
+
+    delay(500);
+
+    Serial <<"--- Wireless Emergency Switch ---"<< crlf;
+    Serial <<"Nagoya Institute of Technology NITRo & SAZANKA"<< crlf;
+    Serial <<"Presented by Kimura Tomohiro"<< crlf;
+    Serial <<"https://github.com/KimuraTomohiro/Wireless_EM_Switch"<< crlf;
+
+}
+
+
+void loop() {
+
+    lcd_control.printAntennaBars(3);
+
+while(1){}
+
+
+}
+
+
+
+
+
