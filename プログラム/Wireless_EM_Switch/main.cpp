@@ -23,6 +23,7 @@ uint16_t rx_volt2 = 0;
 uint32_t rx_timestamp = 0;
 
 bool first_loop = true;
+char EM_btn_wait_status = 0;
 
 
 /*
@@ -108,28 +109,37 @@ uint8_t timer4_count = 0;
 void loop() {
 
     if(Timer4.available()){ 
-        //モード0のみ時間で遷移するモードだが、関数内でループを回すとメインループに戻らずイベントが処理されない。
-        //そのためここに処理を記述する。
         timer4_count ++;
 
         if(timer4_count > 5){
-            if(communication_established_check_flg == true){
-                sprintf(lcd_data_buf1,"Complete");
-            }else{
-                sprintf(lcd_data_buf1,"Timeout");
-            }
+            // if(communication_established_check_flg == true){
+            //     sprintf(lcd_data_buf1,"Complete");
+            // }else{
+            //     sprintf(lcd_data_buf1,"Timeout");
+            // }
             release_signal_send_flg = false;
-
-        while(digitalRead(EM_SW) == PIN_STATE::HIGH){
-            delay(100); //緊急停止からの復帰など、ボタンが押された状態の時に放されるまで待つ
-        }
-            delay(2000);
+            delay(200);
             Timer1.change_hz(2);
             change_mode(next_mode);
+            current_mode = next_mode;
             timer4_count = 0;
             Timer4.end();
 
+            attachIntDio(EM_SW,PIN_INT_MODE::RISING);
+
         }
+    }
+
+    if(EM_btn_wait_status == 1){   
+
+        if(digitalRead(EM_SW) == PIN_STATE::HIGH){   
+
+            delay(10);
+        }else{
+            delay(500);
+            EM_btn_wait_status = 0;
+        }
+
     }
 
     //モード1とモード3の場合疎通が取れていないので一方的な送信のみになり、LCDの表示内容は変化しない。

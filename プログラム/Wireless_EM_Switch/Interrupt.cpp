@@ -18,19 +18,20 @@ extern lcd lcd_control;
 /*****************************************************************/
 
 MWX_DIO_INT(PIN_DIGITAL::DIO18,uint32_t arg, uint8_t& handled){ //停止ボタンが押されたときに割り込み動作を行う。
+
+    EM_btn_wait_status = 1;
+    detachIntDio(EM_SW);    //緊急停止状態に入ったら、ボタンの割り込みは一旦解除する
+    if(current_mode == 1){
+        change_mode(3);
+    }else if(current_mode == 2){
+        change_mode(4);
+    }
     handled = false;
 
 }
 
 MWX_DIO_EVENT(PIN_DIGITAL::DIO18, uint32_t arg){
 
-    if(current_mode == 1){
-        change_mode(3);
-    }else if(current_mode == 2){
-        change_mode(4);
-    }
-
-    detachIntDio(EM_SW);    //緊急停止状態に入ったら、ボタンの割り込みは一旦解除する
 
 }
 
@@ -115,36 +116,41 @@ MWX_TIMER_INT(3, uint32_t arg, uint8_t& handled){
 
 char timer_count = 0;
 MWX_TIMER_EVENT(3, uint32_t arg){
-//緊急停止動作時、ボタンを長押しで解除できるようにする。
-if(digitalRead(EM_SW) == PIN_STATE::HIGH && (current_mode == 3 || current_mode == 4)){  //緊急停止状態でボタンが押されている時
 
-    sprintf(lcd_data_buf1,"HOLD TO RELEASE");
-    lcd_control.setCursor(1,0);
-    for(char i=0;i<=timer_count;i++){
-        lcd_control.print("##");
-    }
-    timer_count++;
+if(EM_btn_wait_status == 0){
+    //緊急停止動作時、ボタンを長押しで解除できるようにする。
+    if(digitalRead(EM_SW) == PIN_STATE::HIGH && (current_mode == 3 || current_mode == 4)){  //緊急停止状態でボタンが押されている時
 
-    if(timer_count > 3){
-        lcd_control.clean();
-        //lcd_data_buf1に格納する方法はLCDの更新に割り込みを使っているので、他の割り込み中は使えない。
-
-        timer_count = 0;
-        if(current_mode == 3){
-            current_mode = 1;
-            change_mode(0);
-        }else if(current_mode == 4){
-            current_mode = 2;
-            change_mode(0);
+        sprintf(lcd_data_buf1,"HOLD TO RELEASE");
+        lcd_control.setCursor(1,0);
+        for(char i=0;i<=timer_count;i++){
+            lcd_control.print("##");
         }
+        timer_count++;
+
+        if(timer_count > 3){
+            lcd_control.clean();
+            //lcd_data_buf1に格納する方法はLCDの更新に割り込みを使っているので、他の割り込み中は使えない。
+
+            timer_count = 0;
+            if(current_mode == 3){
+                current_mode = 1;
+                change_mode(0);
+            }else if(current_mode == 4){
+                current_mode = 2;
+                change_mode(0);
+            }
+
+        }
+
+        }else if(timer_count != 0){  //ボタンを押したが途中で離した場合もとのモードに戻る。
+
+            timer_count = 0;   
+            change_mode(current_mode);
+
+        }
+
     }
-
-}else if(timer_count != 0){  //ボタンを押したが途中で離した場合もとのモードに戻る。
-
-    timer_count = 0;   
-    change_mode(current_mode);
-
-}
 
 }
 

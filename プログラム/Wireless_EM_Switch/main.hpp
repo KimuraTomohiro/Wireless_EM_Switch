@@ -7,3 +7,4 @@ extern uint32_t rx_timestamp;
 extern const uint8_t LED_R;    //ほかファイルから参照できるようにする
 extern const uint8_t LED_G;    //ほかファイルから参照できるようにする
 extern char current_mode;
+extern char EM_btn_wait_status;

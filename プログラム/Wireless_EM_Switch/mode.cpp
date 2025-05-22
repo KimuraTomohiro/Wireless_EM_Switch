@@ -24,7 +24,6 @@ void change_mode(char mode_num){
         sprintf(lcd_data_buf1,"Releasing...");
         release_signal_send_flg = true;
         Timer4.begin(1,true,false);
-
         break;
 
     case 1:
@@ -35,11 +34,11 @@ void change_mode(char mode_num){
         while(digitalRead(EM_SW) == PIN_STATE::HIGH){
             delay(100); //緊急停止からの復帰など、ボタンが押された状態の時に放されるまで待つ
         }
-        delay(500);
+        delay(300);
         attachIntDio(EM_SW,PIN_INT_MODE::RISING);
         current_mode = 1;
 
-        sprintf(lcd_data_buf1,"Detecting MASTER");
+        sprintf(lcd_data_buf1,"Waiting for connection");
         break;
 
     case 2:
@@ -48,26 +47,25 @@ void change_mode(char mode_num){
         while(digitalRead(EM_SW) == PIN_STATE::HIGH){
             delay(100); //緊急停止からの復帰など、ボタンが押された状態の時に放されるまで待つ
         }
-        delay(500);
-
+        delay(300);
         attachIntDio(EM_SW,PIN_INT_MODE::RISING);
         current_mode = 2;
 
         break;
 
     case 3:
-
+        detachIntDio(EM_SW);  
         lcd_control.clean();
         current_mode = 3;
         LED_mode = 3;
-        sprintf(lcd_data_buf1,"Detecting MASTER");
+        sprintf(lcd_data_buf1,"Waiting for connection");
         lcd_control.setCursor(1,0);
         lcd_control.print("EM");
         break;
 
 
     case 4:
-
+        detachIntDio(EM_SW);  
         lcd_control.clean();
         current_mode = 4;
         LED_mode = 4;
