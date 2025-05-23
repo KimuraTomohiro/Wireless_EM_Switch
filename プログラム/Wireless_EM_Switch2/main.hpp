@@ -8,3 +8,10 @@ extern const uint8_t LED_R;    //ほかファイルから参照できるよう�
 extern const uint8_t LED_G;    //ほかファイルから参照できるようにする
 extern char current_mode;
 extern char EM_btn_wait_status;
+
+enum CURRENT_MODE{
+    NOMAL,
+    EMERGENCY
+};
+
+extern CURRENT_MODE mode;

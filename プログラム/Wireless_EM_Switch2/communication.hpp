@@ -6,6 +6,7 @@ extern uint8_t rx_status;
 extern uint16_t rx_volt1;
 extern uint16_t rx_volt2;
 extern uint32_t rx_timestamp;
+extern uint8_t lqi_data;
 
-void vTransmit(uint32_t addr, uint8_t data, uint8_t retry = 3);
+void vTransmit(uint32_t addr, uint8_t data, uint8_t retry = 0x3);
 void on_rx_packet(packet_rx& rx, bool_t &handled);

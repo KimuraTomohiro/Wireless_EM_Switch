@@ -23,3 +23,4 @@ class lcd {
 
     
 void LCD_Timer_Control();
+void LCD_Antenna_update();

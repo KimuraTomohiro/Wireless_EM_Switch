@@ -88,16 +88,29 @@ void lcd::defineAntennaBars() {
 
 void lcd::printAntennaBars(char bars) {
 
+    lcd::setCursor(0,6);
+
     switch(bars){
+
+        case 0:
+            lcd::data(0x00);
+            lcd::data(0xF7); 
+        break;
+
         case 1:
             lcd::data(0x00);
             lcd::data(0x01);
+        break;
+
         case 2:
             lcd::data(0x00);
             lcd::data(0x02);
+        break;
+
         case 3:
             lcd::data(0x00);
             lcd::data(0x03);
+        break;
 
     }
 
@@ -152,6 +165,13 @@ const uint8_t lcd::antenna_3bar[] = {
 
 
 extern lcd lcd_control;
+
+
+void LCD_status_update(){
+    
+
+
+}
 
 char lcd_data_buf1[32] = "";
 char lcd_data_buf2[32] = ""; 

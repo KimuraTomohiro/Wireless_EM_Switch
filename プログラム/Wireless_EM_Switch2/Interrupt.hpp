@@ -1,3 +1,9 @@
+#ifndef INTERRUPT_HPP
+#define INTERRUPT_HPP
+
+#include "LED.hpp"
+
+
 class INTERRUPT: MWX_APPDEFS_CRTP(INTERRUPT)
 {
 public:
@@ -29,7 +35,12 @@ public:
 public:
     void network_event(mwx::packet_ev_nwk& pEvNwk) {}
     void receive(mwx::packet_rx& rx) {}
-    void transmit_complete(mwx::packet_ev_tx& evTx) {}
+    void transmit_complete(mwx::packet_ev_tx& evTx);
 };
 
 extern bool communication_established_check_flg;
+extern LED_color led_color;
+extern LED_flash led_flash;
+extern bool communication_status;
+
+#endif // INTERRUPT_HPP
