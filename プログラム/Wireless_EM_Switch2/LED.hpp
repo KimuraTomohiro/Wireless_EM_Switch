@@ -7,6 +7,7 @@ extern char LED_mode;
 enum LED_flash{
     OFF,
     ON,
+    BLINK_SLOW,
     BLINK,
     BLINK_FAST,
 };

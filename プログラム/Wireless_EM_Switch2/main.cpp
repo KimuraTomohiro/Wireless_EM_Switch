@@ -12,6 +12,11 @@ const uint8_t LED_G = 13;    //ほかファイルから参照できるように�
 const uint8_t EM_SW = 18;
 const uint8_t RESET_SW = 19;
 
+extern bool release_flg;
+extern uint8_t timer3_count;
+
+
+
 
 lcd lcd_control = lcd();    //LCD制御用のインスタンス
 
@@ -20,10 +25,9 @@ uint8_t rx_status = 0;
 uint16_t rx_volt1 = 0;
 uint16_t rx_volt2 = 0;
 uint32_t rx_timestamp = 0;
+uint32_t after_release_count = 10;
 
-CURRENT_MODE mode = NOMAL;
-
-
+CURRENT_MODE current_mode = NORMAL;
 
 void setup() {
 
@@ -42,7 +46,9 @@ void setup() {
     Timer1.begin(2,true,false); //LEDの点滅制御用タイマー1を2Hz、割り込みあり、PWM出力なしでスタート
 
     Timer2.setup();
-    Timer2.begin(2,true,false); //疎通確認用のタイマー2を2Hz、割り込みあり、PWM出力なしでスタート
+    Timer2.begin(2,true,false); //通信用のタイマー2を2Hz、割り込みあり、PWM出力なしでスタート
+
+    Timer3.setup(); //長押しの確認用
 
 
     
@@ -72,11 +78,28 @@ void setup() {
 }
 
 
+uint8_t switch_stable_count = 0;
+bool timer_change_flg = false;
+
 void loop() {
 
-    while(1){
-        vTransmit(0x0,0x12);
-        delay(3000);
+    if((current_mode == EMERGENCY_MAIN) && (digitalRead(EM_SW) == PIN_STATE::HIGH)){
+        timer_change_flg = true;
+        Timer0.end();
+        Timer3.begin(4,true,false);
+
+    }else if((current_mode == RELEASE) && (digitalRead(EM_SW) == PIN_STATE::LOW)){//RELEASEに入ってからボタンを離した場合元のモードに戻る
+        current_mode == EMERGENCY_MAIN;
+
+    }else{
+        if(timer_change_flg == true){ //タイマが切り替わった最初の一回のみ実行する
+            lcd_control.clean();
+        }
+
+        Timer0.begin(3,true,false);
+        timer_change_flg = false;
+        Timer3.end();
+        timer3_count = 0;
     }
 
 }

@@ -1,0 +1,4 @@
+/Users/tomohiro/Documents/MWSTAGE/MWSDK/Act_samples/Wireless_EM_Switch2/Interrupt.cpp: In member function 'void INTERRUPT::int_timer_handler(uint32_t, uint8_t&) [with int N = 2; uint32_t = long unsigned int; uint8_t = unsigned char]':
+/Users/tomohiro/Documents/MWSTAGE/MWSDK/Act_samples/Wireless_EM_Switch2/Interrupt.cpp:108:23: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+/Users/tomohiro/Documents/MWSTAGE/MWSDK/Act_samples/Wireless_EM_Switch2/main.cpp: In function 'void loop()':
+/Users/tomohiro/Documents/MWSTAGE/MWSDK/Act_samples/Wireless_EM_Switch2/main.cpp:92:39: warning: statement has no effect [-Wunused-value]

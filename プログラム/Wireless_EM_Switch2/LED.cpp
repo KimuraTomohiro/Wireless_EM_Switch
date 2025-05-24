@@ -26,8 +26,32 @@ void Timer_LED_Control(LED_color color,LED_flash flash){
             }
         break;
         
-        case BLINK:
+
+        case BLINK_SLOW:
             Timer1.change_hz(2);
+            //赤を点滅
+            if(color == RED){
+                if(LED_R_ON == true){
+                    digitalWrite(LED_R,HIGH);
+                    LED_R_ON = false;
+                }else{
+                    digitalWrite(LED_R,LOW);
+                    LED_R_ON = true;
+                }
+            }else{
+            //緑を点滅
+                if(LED_G_ON == true){
+                    digitalWrite(LED_G,HIGH);
+                    LED_G_ON = false;
+                }else{
+                    digitalWrite(LED_G,LOW);
+                    LED_G_ON = true;
+                }
+            }
+        break;
+
+        case BLINK:
+            Timer1.change_hz(5);
             //赤を点滅
             if(color == RED){
                 if(LED_R_ON == true){

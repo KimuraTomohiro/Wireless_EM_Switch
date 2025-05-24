@@ -6,12 +6,14 @@ extern uint16_t rx_volt2;
 extern uint32_t rx_timestamp;
 extern const uint8_t LED_R;    //ほかファイルから参照できるようにする
 extern const uint8_t LED_G;    //ほかファイルから参照できるようにする
-extern char current_mode;
 extern char EM_btn_wait_status;
+extern uint32_t after_release_count;
 
 enum CURRENT_MODE{
-    NOMAL,
-    EMERGENCY
+    NORMAL,
+    EMERGENCY_MAIN,
+    EMERGENCY_SUB,
+    RELEASE
 };
 
-extern CURRENT_MODE mode;
+extern CURRENT_MODE current_mode;
