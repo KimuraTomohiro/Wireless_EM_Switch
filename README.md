@@ -1,4 +1,7 @@
 # Wireless_EM_Switch
+
+The English page can be found [Here](README_en.md)
+
 [専用基板](https://github.com/KimuraTomohiro/PowerBoard2025)を制御する無線スイッチの公開データです。
 本体は[こちらのBoothページ](https://kimuratomohiro.booth.pm/items/6996725)で販売しています。
 仕様に関する質問は`runs_augury7u[Atto]icloud.com`までお願いします。(かっこを＠に置き換えてください)
@@ -63,3 +66,10 @@
 ##　プログラムの書き換えについて
 チャンネルIDやアプリケーションIDの変更には[TWELITER3](https://mono-wireless.com/jp/products/twelite-r/index.html)が必要です。
 詳しくは[プログラム書き換え方法](プログラム書き換え方法.md)を参照してください。
+
+## アプリケーションIDとチャンネルの確認方法について
+リレーコントロールユニットと通信を行うためには、本機のアプリケーションIDとチャンネルIDが一致している必要があります。
+本機のアプリケーションIDとチャンネルIDの確認方法について説明します。
+1. 本機の裏蓋を開きます。
+2. 電源スイッチで電源を切り、基板上の設定表示ボタンを押しながら電源を投入します。
+3. 設定表示ボタンを押し続けている間、ディスプレイの上段にアプリケーションID,下段に3つのチャンネルIDが表示されます。
