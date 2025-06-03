@@ -63,7 +63,7 @@ The English page can be found [Here](README_en.md)
 ## オートパワーオフ機能について
 本機には12時間のオートパワーオフ機能が搭載されています。画面の表示が`Sleeping`になったら、オートパワーオフ機能が働いていますので、電源を再投入してください。
 
-##　プログラムの書き換えについて
+## プログラムの書き換えについて
 チャンネルIDやアプリケーションIDの変更には[TWELITER3](https://mono-wireless.com/jp/products/twelite-r/index.html)が必要です。
 詳しくは[プログラム書き換え方法](プログラム書き換え方法.md)を参照してください。
 
