@@ -10,11 +10,11 @@ The English page can be found [Here](README_en.md)
 ## 各部名称
 
 ### 本体
-![各部名称_上面](図/各部名称_正面.png)
-![各部名称_背面](図/各部名称_背面.png)
+<img src="図/各部名称_正面.png" width="600">
+<img src="図/各部名称_背面.png" width="600">
 
 ### ディスプレイ
-![各部名称_ディスプレイ](図/各部名称_ディスプレイ.png)
+<img src="図/各部名称_ディスプレイ.png" width="600">
 
 ### 各部の役割
 * 緊急停止スイッチ  
