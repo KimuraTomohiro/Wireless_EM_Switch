@@ -1,5 +1,4 @@
 # Wireless_EM_Switch
-
 The English page can be found [Here](README_en.md)
 
 [専用基板](https://github.com/KimuraTomohiro/PowerBoard2025)を制御する無線スイッチの公開データです。
